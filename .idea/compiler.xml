@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="APIAutomationFramework - PayConiq" />
         <module name="APIAutomationFramework" />
-        <module name="APIAutomationFrameworkAdvance" />
         <module name="APIAutomationFrameworkAdvance - Copy" />
+        <module name="APIAutomationFrameworkAdvance" />
+        <module name="APIAutomationFramework - PayConiq" />
       </profile>
     </annotationProcessing>
   </component>

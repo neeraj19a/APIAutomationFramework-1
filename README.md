@@ -36,7 +36,7 @@ We use POJO with @Data and @Builder annotations provided by Lombok to create Dat
 
 **log4j.properties:** This contains configurations for Logging used by Log4j to generate Logs. 
 
-**TestReport.html** This is the Extent Report that is generated when API Test Cases are run, It is present under path (/src/main/testReport/TestReport.html)
+**TestReport.html** This is the Extent Report that is generated when API Test Cases are run, It is present under path (/src/test/testReport/TestReport.html)
 
 ##POJO
 All classes required for API are present under (/src/test/java/pojo)
@@ -79,5 +79,5 @@ Tests run: 18, Failures: 0, Errors: 0, Skipped: 0
 
 **LOGS:** Test Case Execution logs should be present under (log/testlog.log)
 
-**Test case Execution Report**: Test case Execution report should be present under (src/main/testReport/TestReport.html)
+**Test case Execution Report**: Test case Execution report should be present under (src/test/testReport/TestReport.html)
 

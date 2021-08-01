@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="18" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="26986" started-at="2021-08-01T09:19:49Z" finished-at="2021-08-01T09:20:16Z">
+  <suite name="Suite" duration-ms="27957" started-at="2021-08-01T10:14:29Z" finished-at="2021-08-01T10:14:57Z">
     <groups>
     </groups>
-    <test name="Regression of Existing Bookings" duration-ms="15871" started-at="2021-08-01T09:19:49Z" finished-at="2021-08-01T09:20:05Z">
+    <test name="Regression of Existing Bookings" duration-ms="16539" started-at="2021-08-01T10:14:29Z" finished-at="2021-08-01T10:14:46Z">
       <class name="testcases.TestCasesExistingBooking">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="beforeClass" is-config="true" duration-ms="4" started-at="2021-08-01T09:19:49Z" finished-at="2021-08-01T09:19:49Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="beforeClass" is-config="true" duration-ms="6" started-at="2021-08-01T10:14:29Z" finished-at="2021-08-01T10:14:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="beforeMethod" is-config="true" duration-ms="37" started-at="2021-08-01T09:19:49Z" finished-at="2021-08-01T09:19:50Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="beforeMethod" is-config="true" duration-ms="39" started-at="2021-08-01T10:14:29Z" finished-at="2021-08-01T10:14:29Z">
           <params>
             <param index="0">
               <value>
@@ -22,22 +22,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getListOfBooking()[pri:1, instance:testcases.TestCasesExistingBooking@fba92d3]" name="getListOfBooking" duration-ms="4293" started-at="2021-08-01T09:19:50Z" finished-at="2021-08-01T09:19:54Z">
+        <test-method status="PASS" signature="getListOfBooking()[pri:1, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="getListOfBooking" duration-ms="4425" started-at="2021-08-01T10:14:29Z" finished-at="2021-08-01T10:14:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getListOfBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="afterMethod" is-config="true" duration-ms="10" started-at="2021-08-01T09:19:54Z" finished-at="2021-08-01T09:19:54Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="afterMethod" is-config="true" duration-ms="4" started-at="2021-08-01T10:14:34Z" finished-at="2021-08-01T10:14:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getListOfBooking status=SUCCESS method=TestCasesExistingBooking.getListOfBooking()[pri:1, instance:testcases.TestCasesExistingBooking@fba92d3] output={null}]]]>
+                <![CDATA[[TestResult name=getListOfBooking status=SUCCESS method=TestCasesExistingBooking.getListOfBooking()[pri:1, instance:testcases.TestCasesExistingBooking@6cc4cdb9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:19:54Z" finished-at="2021-08-01T09:19:54Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2021-08-01T10:14:34Z" finished-at="2021-08-01T10:14:34Z">
           <params>
             <param index="0">
               <value>
@@ -48,22 +48,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getExistingBookingById()[pri:2, instance:testcases.TestCasesExistingBooking@fba92d3]" name="getExistingBookingById" duration-ms="1232" started-at="2021-08-01T09:19:54Z" finished-at="2021-08-01T09:19:55Z">
+        <test-method status="PASS" signature="getExistingBookingById()[pri:2, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="getExistingBookingById" duration-ms="1555" started-at="2021-08-01T10:14:34Z" finished-at="2021-08-01T10:14:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getExistingBookingById -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:19:55Z" finished-at="2021-08-01T09:19:55Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:35Z" finished-at="2021-08-01T10:14:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getExistingBookingById status=SUCCESS method=TestCasesExistingBooking.getExistingBookingById()[pri:2, instance:testcases.TestCasesExistingBooking@fba92d3] output={null}]]]>
+                <![CDATA[[TestResult name=getExistingBookingById status=SUCCESS method=TestCasesExistingBooking.getExistingBookingById()[pri:2, instance:testcases.TestCasesExistingBooking@6cc4cdb9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2021-08-01T09:19:55Z" finished-at="2021-08-01T09:19:55Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-08-01T10:14:35Z" finished-at="2021-08-01T10:14:35Z">
           <params>
             <param index="0">
               <value>
@@ -74,22 +74,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="updateExistingBookingWithoutToken()[pri:3, instance:testcases.TestCasesExistingBooking@fba92d3]" name="updateExistingBookingWithoutToken" duration-ms="1729" started-at="2021-08-01T09:19:55Z" finished-at="2021-08-01T09:19:57Z">
+        <test-method status="PASS" signature="updateExistingBookingWithoutToken()[pri:3, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="updateExistingBookingWithoutToken" duration-ms="1879" started-at="2021-08-01T10:14:35Z" finished-at="2021-08-01T10:14:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExistingBookingWithoutToken -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="afterMethod" is-config="true" duration-ms="4" started-at="2021-08-01T09:19:57Z" finished-at="2021-08-01T09:19:57Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="afterMethod" is-config="true" duration-ms="3" started-at="2021-08-01T10:14:37Z" finished-at="2021-08-01T10:14:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=updateExistingBookingWithoutToken status=SUCCESS method=TestCasesExistingBooking.updateExistingBookingWithoutToken()[pri:3, instance:testcases.TestCasesExistingBooking@fba92d3] output={null}]]]>
+                <![CDATA[[TestResult name=updateExistingBookingWithoutToken status=SUCCESS method=TestCasesExistingBooking.updateExistingBookingWithoutToken()[pri:3, instance:testcases.TestCasesExistingBooking@6cc4cdb9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:19:57Z" finished-at="2021-08-01T09:19:57Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="beforeMethod" is-config="true" duration-ms="5" started-at="2021-08-01T10:14:37Z" finished-at="2021-08-01T10:14:37Z">
           <params>
             <param index="0">
               <value>
@@ -100,22 +100,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="patchExistingBookingWithoutToken()[pri:4, instance:testcases.TestCasesExistingBooking@fba92d3]" name="patchExistingBookingWithoutToken" duration-ms="1485" started-at="2021-08-01T09:19:57Z" finished-at="2021-08-01T09:19:58Z">
+        <test-method status="PASS" signature="patchExistingBookingWithoutToken()[pri:4, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="patchExistingBookingWithoutToken" duration-ms="1432" started-at="2021-08-01T10:14:37Z" finished-at="2021-08-01T10:14:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patchExistingBookingWithoutToken -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T09:19:58Z" finished-at="2021-08-01T09:19:58Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="afterMethod" is-config="true" duration-ms="4" started-at="2021-08-01T10:14:39Z" finished-at="2021-08-01T10:14:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=patchExistingBookingWithoutToken status=SUCCESS method=TestCasesExistingBooking.patchExistingBookingWithoutToken()[pri:4, instance:testcases.TestCasesExistingBooking@fba92d3] output={null}]]]>
+                <![CDATA[[TestResult name=patchExistingBookingWithoutToken status=SUCCESS method=TestCasesExistingBooking.patchExistingBookingWithoutToken()[pri:4, instance:testcases.TestCasesExistingBooking@6cc4cdb9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-08-01T09:19:58Z" finished-at="2021-08-01T09:19:58Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-08-01T10:14:39Z" finished-at="2021-08-01T10:14:39Z">
           <params>
             <param index="0">
               <value>
@@ -126,22 +126,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="generateToken()[pri:5, instance:testcases.TestCasesExistingBooking@fba92d3]" name="generateToken" duration-ms="1876" started-at="2021-08-01T09:19:58Z" finished-at="2021-08-01T09:20:00Z">
+        <test-method status="PASS" signature="generateToken()[pri:5, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="generateToken" duration-ms="2024" started-at="2021-08-01T10:14:39Z" finished-at="2021-08-01T10:14:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateToken -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:00Z" finished-at="2021-08-01T09:20:00Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T10:14:41Z" finished-at="2021-08-01T10:14:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=generateToken status=SUCCESS method=TestCasesExistingBooking.generateToken()[pri:5, instance:testcases.TestCasesExistingBooking@fba92d3] output={null}]]]>
+                <![CDATA[[TestResult name=generateToken status=SUCCESS method=TestCasesExistingBooking.generateToken()[pri:5, instance:testcases.TestCasesExistingBooking@6cc4cdb9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="beforeMethod" is-config="true" duration-ms="4" started-at="2021-08-01T09:20:00Z" finished-at="2021-08-01T09:20:00Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2021-08-01T10:14:41Z" finished-at="2021-08-01T10:14:41Z">
           <params>
             <param index="0">
               <value>
@@ -152,22 +152,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="updateExistingBooking()[pri:6, instance:testcases.TestCasesExistingBooking@fba92d3]" name="updateExistingBooking" duration-ms="1380" started-at="2021-08-01T09:20:00Z" finished-at="2021-08-01T09:20:02Z">
+        <test-method status="PASS" signature="updateExistingBooking()[pri:6, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="updateExistingBooking" duration-ms="1262" started-at="2021-08-01T10:14:41Z" finished-at="2021-08-01T10:14:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateExistingBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:02Z" finished-at="2021-08-01T09:20:02Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:42Z" finished-at="2021-08-01T10:14:42Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=updateExistingBooking status=SUCCESS method=TestCasesExistingBooking.updateExistingBooking()[pri:6, instance:testcases.TestCasesExistingBooking@fba92d3] output={null}]]]>
+                <![CDATA[[TestResult name=updateExistingBooking status=SUCCESS method=TestCasesExistingBooking.updateExistingBooking()[pri:6, instance:testcases.TestCasesExistingBooking@6cc4cdb9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2021-08-01T09:20:02Z" finished-at="2021-08-01T09:20:02Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:42Z" finished-at="2021-08-01T10:14:42Z">
           <params>
             <param index="0">
               <value>
@@ -178,22 +178,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getLastUpdatedExistingBooking()[pri:7, instance:testcases.TestCasesExistingBooking@fba92d3]" name="getLastUpdatedExistingBooking" duration-ms="1312" started-at="2021-08-01T09:20:02Z" finished-at="2021-08-01T09:20:03Z">
+        <test-method status="PASS" signature="getLastUpdatedExistingBooking()[pri:7, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="getLastUpdatedExistingBooking" duration-ms="1216" started-at="2021-08-01T10:14:42Z" finished-at="2021-08-01T10:14:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLastUpdatedExistingBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T09:20:03Z" finished-at="2021-08-01T09:20:03Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="afterMethod" is-config="true" duration-ms="3" started-at="2021-08-01T10:14:43Z" finished-at="2021-08-01T10:14:43Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getLastUpdatedExistingBooking status=SUCCESS method=TestCasesExistingBooking.getLastUpdatedExistingBooking()[pri:7, instance:testcases.TestCasesExistingBooking@fba92d3] output={null}]]]>
+                <![CDATA[[TestResult name=getLastUpdatedExistingBooking status=SUCCESS method=TestCasesExistingBooking.getLastUpdatedExistingBooking()[pri:7, instance:testcases.TestCasesExistingBooking@6cc4cdb9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:03Z" finished-at="2021-08-01T09:20:03Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-08-01T10:14:43Z" finished-at="2021-08-01T10:14:43Z">
           <params>
             <param index="0">
               <value>
@@ -204,22 +204,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="patchLastUpdatedExistingBooking()[pri:8, instance:testcases.TestCasesExistingBooking@fba92d3]" name="patchLastUpdatedExistingBooking" duration-ms="1282" started-at="2021-08-01T09:20:03Z" finished-at="2021-08-01T09:20:04Z">
+        <test-method status="PASS" signature="patchLastUpdatedExistingBooking()[pri:8, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="patchLastUpdatedExistingBooking" duration-ms="1325" started-at="2021-08-01T10:14:43Z" finished-at="2021-08-01T10:14:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patchLastUpdatedExistingBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:04Z" finished-at="2021-08-01T09:20:04Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T10:14:45Z" finished-at="2021-08-01T10:14:45Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=patchLastUpdatedExistingBooking status=SUCCESS method=TestCasesExistingBooking.patchLastUpdatedExistingBooking()[pri:8, instance:testcases.TestCasesExistingBooking@fba92d3] output={null}]]]>
+                <![CDATA[[TestResult name=patchLastUpdatedExistingBooking status=SUCCESS method=TestCasesExistingBooking.patchLastUpdatedExistingBooking()[pri:8, instance:testcases.TestCasesExistingBooking@6cc4cdb9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:04Z" finished-at="2021-08-01T09:20:04Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-08-01T10:14:45Z" finished-at="2021-08-01T10:14:45Z">
           <params>
             <param index="0">
               <value>
@@ -230,15 +230,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="deleteExistingBooking()[pri:9, instance:testcases.TestCasesExistingBooking@fba92d3]" name="deleteExistingBooking" duration-ms="1171" started-at="2021-08-01T09:20:04Z" finished-at="2021-08-01T09:20:05Z">
+        <test-method status="PASS" signature="deleteExistingBooking()[pri:9, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="deleteExistingBooking" duration-ms="1297" started-at="2021-08-01T10:14:45Z" finished-at="2021-08-01T10:14:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteExistingBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@fba92d3]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:05Z" finished-at="2021-08-01T09:20:05Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@6cc4cdb9]" name="afterMethod" is-config="true" duration-ms="5" started-at="2021-08-01T10:14:46Z" finished-at="2021-08-01T10:14:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteExistingBooking status=SUCCESS method=TestCasesExistingBooking.deleteExistingBooking()[pri:9, instance:testcases.TestCasesExistingBooking@fba92d3] output={null}]]]>
+                <![CDATA[[TestResult name=deleteExistingBooking status=SUCCESS method=TestCasesExistingBooking.deleteExistingBooking()[pri:9, instance:testcases.TestCasesExistingBooking@6cc4cdb9] output={null}]]]>
               </value>
             </param>
           </params>
@@ -247,13 +247,13 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- testcases.TestCasesExistingBooking -->
     </test> <!-- Regression of Existing Bookings -->
-    <test name="Regression of New  Bookings" duration-ms="11083" started-at="2021-08-01T09:20:05Z" finished-at="2021-08-01T09:20:16Z">
+    <test name="Regression of New  Bookings" duration-ms="11392" started-at="2021-08-01T10:14:46Z" finished-at="2021-08-01T10:14:57Z">
       <class name="testcases.TestCasesNewBooking">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="setUp" is-config="true" duration-ms="237" started-at="2021-08-01T09:19:49Z" finished-at="2021-08-01T09:19:49Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="setUp" is-config="true" duration-ms="235" started-at="2021-08-01T10:14:29Z" finished-at="2021-08-01T10:14:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-08-01T09:20:05Z" finished-at="2021-08-01T09:20:05Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:46Z" finished-at="2021-08-01T10:14:46Z">
           <params>
             <param index="0">
               <value>
@@ -264,26 +264,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-08-01T09:20:05Z" finished-at="2021-08-01T09:20:05Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-08-01T10:14:46Z" finished-at="2021-08-01T10:14:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="getListOfBooking()[pri:1, instance:testcases.TestCasesNewBooking@47987356]" name="getListOfBooking" duration-ms="1184" started-at="2021-08-01T09:20:05Z" finished-at="2021-08-01T09:20:07Z">
+        <test-method status="PASS" signature="getListOfBooking()[pri:1, instance:testcases.TestCasesNewBooking@4149c063]" name="getListOfBooking" duration-ms="1307" started-at="2021-08-01T10:14:46Z" finished-at="2021-08-01T10:14:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getListOfBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:07Z" finished-at="2021-08-01T09:20:07Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:47Z" finished-at="2021-08-01T10:14:47Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getListOfBooking status=SUCCESS method=TestCasesNewBooking.getListOfBooking()[pri:1, instance:testcases.TestCasesNewBooking@47987356] output={null}]]]>
+                <![CDATA[[TestResult name=getListOfBooking status=SUCCESS method=TestCasesNewBooking.getListOfBooking()[pri:1, instance:testcases.TestCasesNewBooking@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:07Z" finished-at="2021-08-01T09:20:07Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:47Z" finished-at="2021-08-01T10:14:47Z">
           <params>
             <param index="0">
               <value>
@@ -294,22 +294,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="createBooking()[pri:2, instance:testcases.TestCasesNewBooking@47987356]" name="createBooking" duration-ms="1278" started-at="2021-08-01T09:20:07Z" finished-at="2021-08-01T09:20:08Z">
+        <test-method status="PASS" signature="createBooking()[pri:2, instance:testcases.TestCasesNewBooking@4149c063]" name="createBooking" duration-ms="1285" started-at="2021-08-01T10:14:47Z" finished-at="2021-08-01T10:14:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:08Z" finished-at="2021-08-01T09:20:08Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:49Z" finished-at="2021-08-01T10:14:49Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createBooking status=SUCCESS method=TestCasesNewBooking.createBooking()[pri:2, instance:testcases.TestCasesNewBooking@47987356] output={null}]]]>
+                <![CDATA[[TestResult name=createBooking status=SUCCESS method=TestCasesNewBooking.createBooking()[pri:2, instance:testcases.TestCasesNewBooking@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:08Z" finished-at="2021-08-01T09:20:08Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-08-01T10:14:49Z" finished-at="2021-08-01T10:14:49Z">
           <params>
             <param index="0">
               <value>
@@ -320,22 +320,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getLastCreatedBookingById()[pri:3, instance:testcases.TestCasesNewBooking@47987356]" name="getLastCreatedBookingById" duration-ms="1291" started-at="2021-08-01T09:20:08Z" finished-at="2021-08-01T09:20:09Z">
+        <test-method status="PASS" signature="getLastCreatedBookingById()[pri:3, instance:testcases.TestCasesNewBooking@4149c063]" name="getLastCreatedBookingById" duration-ms="1230" started-at="2021-08-01T10:14:49Z" finished-at="2021-08-01T10:14:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLastCreatedBookingById -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:09Z" finished-at="2021-08-01T09:20:09Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T10:14:50Z" finished-at="2021-08-01T10:14:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getLastCreatedBookingById status=SUCCESS method=TestCasesNewBooking.getLastCreatedBookingById()[pri:3, instance:testcases.TestCasesNewBooking@47987356] output={null}]]]>
+                <![CDATA[[TestResult name=getLastCreatedBookingById status=SUCCESS method=TestCasesNewBooking.getLastCreatedBookingById()[pri:3, instance:testcases.TestCasesNewBooking@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:09Z" finished-at="2021-08-01T09:20:09Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-08-01T10:14:50Z" finished-at="2021-08-01T10:14:50Z">
           <params>
             <param index="0">
               <value>
@@ -346,22 +346,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="generateToken()[pri:4, instance:testcases.TestCasesNewBooking@47987356]" name="generateToken" duration-ms="1179" started-at="2021-08-01T09:20:09Z" finished-at="2021-08-01T09:20:10Z">
+        <test-method status="PASS" signature="generateToken()[pri:4, instance:testcases.TestCasesNewBooking@4149c063]" name="generateToken" duration-ms="1291" started-at="2021-08-01T10:14:50Z" finished-at="2021-08-01T10:14:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateToken -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:10Z" finished-at="2021-08-01T09:20:10Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T10:14:51Z" finished-at="2021-08-01T10:14:51Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=generateToken status=SUCCESS method=TestCasesNewBooking.generateToken()[pri:4, instance:testcases.TestCasesNewBooking@47987356] output={null}]]]>
+                <![CDATA[[TestResult name=generateToken status=SUCCESS method=TestCasesNewBooking.generateToken()[pri:4, instance:testcases.TestCasesNewBooking@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:10Z" finished-at="2021-08-01T09:20:10Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-08-01T10:14:51Z" finished-at="2021-08-01T10:14:51Z">
           <params>
             <param index="0">
               <value>
@@ -372,22 +372,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="updateLastCreatedBooking()[pri:5, instance:testcases.TestCasesNewBooking@47987356]" name="updateLastCreatedBooking" duration-ms="1262" started-at="2021-08-01T09:20:10Z" finished-at="2021-08-01T09:20:12Z">
+        <test-method status="PASS" signature="updateLastCreatedBooking()[pri:5, instance:testcases.TestCasesNewBooking@4149c063]" name="updateLastCreatedBooking" duration-ms="1326" started-at="2021-08-01T10:14:51Z" finished-at="2021-08-01T10:14:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateLastCreatedBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:12Z" finished-at="2021-08-01T09:20:12Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:52Z" finished-at="2021-08-01T10:14:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=updateLastCreatedBooking status=SUCCESS method=TestCasesNewBooking.updateLastCreatedBooking()[pri:5, instance:testcases.TestCasesNewBooking@47987356] output={null}]]]>
+                <![CDATA[[TestResult name=updateLastCreatedBooking status=SUCCESS method=TestCasesNewBooking.updateLastCreatedBooking()[pri:5, instance:testcases.TestCasesNewBooking@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:12Z" finished-at="2021-08-01T09:20:12Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:52Z" finished-at="2021-08-01T10:14:52Z">
           <params>
             <param index="0">
               <value>
@@ -398,22 +398,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getLastUpdatedBooking()[pri:6, instance:testcases.TestCasesNewBooking@47987356]" name="getLastUpdatedBooking" duration-ms="1198" started-at="2021-08-01T09:20:12Z" finished-at="2021-08-01T09:20:13Z">
+        <test-method status="PASS" signature="getLastUpdatedBooking()[pri:6, instance:testcases.TestCasesNewBooking@4149c063]" name="getLastUpdatedBooking" duration-ms="1158" started-at="2021-08-01T10:14:52Z" finished-at="2021-08-01T10:14:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLastUpdatedBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:13Z" finished-at="2021-08-01T09:20:13Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:54Z" finished-at="2021-08-01T10:14:54Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getLastUpdatedBooking status=SUCCESS method=TestCasesNewBooking.getLastUpdatedBooking()[pri:6, instance:testcases.TestCasesNewBooking@47987356] output={null}]]]>
+                <![CDATA[[TestResult name=getLastUpdatedBooking status=SUCCESS method=TestCasesNewBooking.getLastUpdatedBooking()[pri:6, instance:testcases.TestCasesNewBooking@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2021-08-01T09:20:13Z" finished-at="2021-08-01T09:20:13Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:54Z" finished-at="2021-08-01T10:14:54Z">
           <params>
             <param index="0">
               <value>
@@ -424,22 +424,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="patchLastUpdatedBooking()[pri:7, instance:testcases.TestCasesNewBooking@47987356]" name="patchLastUpdatedBooking" duration-ms="1317" started-at="2021-08-01T09:20:13Z" finished-at="2021-08-01T09:20:14Z">
+        <test-method status="PASS" signature="patchLastUpdatedBooking()[pri:7, instance:testcases.TestCasesNewBooking@4149c063]" name="patchLastUpdatedBooking" duration-ms="1330" started-at="2021-08-01T10:14:54Z" finished-at="2021-08-01T10:14:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patchLastUpdatedBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:14Z" finished-at="2021-08-01T09:20:14Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:55Z" finished-at="2021-08-01T10:14:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=patchLastUpdatedBooking status=SUCCESS method=TestCasesNewBooking.patchLastUpdatedBooking()[pri:7, instance:testcases.TestCasesNewBooking@47987356] output={null}]]]>
+                <![CDATA[[TestResult name=patchLastUpdatedBooking status=SUCCESS method=TestCasesNewBooking.patchLastUpdatedBooking()[pri:7, instance:testcases.TestCasesNewBooking@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2021-08-01T09:20:14Z" finished-at="2021-08-01T09:20:14Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:55Z" finished-at="2021-08-01T10:14:55Z">
           <params>
             <param index="0">
               <value>
@@ -450,22 +450,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="deleteLastCreatedBooking()[pri:8, instance:testcases.TestCasesNewBooking@47987356]" name="deleteLastCreatedBooking" duration-ms="1153" started-at="2021-08-01T09:20:14Z" finished-at="2021-08-01T09:20:15Z">
+        <test-method status="PASS" signature="deleteLastCreatedBooking()[pri:8, instance:testcases.TestCasesNewBooking@4149c063]" name="deleteLastCreatedBooking" duration-ms="1157" started-at="2021-08-01T10:14:55Z" finished-at="2021-08-01T10:14:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteLastCreatedBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T09:20:15Z" finished-at="2021-08-01T09:20:15Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:56Z" finished-at="2021-08-01T10:14:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=deleteLastCreatedBooking status=SUCCESS method=TestCasesNewBooking.deleteLastCreatedBooking()[pri:8, instance:testcases.TestCasesNewBooking@47987356] output={null}]]]>
+                <![CDATA[[TestResult name=deleteLastCreatedBooking status=SUCCESS method=TestCasesNewBooking.deleteLastCreatedBooking()[pri:8, instance:testcases.TestCasesNewBooking@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T09:20:15Z" finished-at="2021-08-01T09:20:15Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:56Z" finished-at="2021-08-01T10:14:56Z">
           <params>
             <param index="0">
               <value>
@@ -476,22 +476,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="getLastDeletedBooking()[pri:9, instance:testcases.TestCasesNewBooking@47987356]" name="getLastDeletedBooking" duration-ms="1186" started-at="2021-08-01T09:20:15Z" finished-at="2021-08-01T09:20:16Z">
+        <test-method status="PASS" signature="getLastDeletedBooking()[pri:9, instance:testcases.TestCasesNewBooking@4149c063]" name="getLastDeletedBooking" duration-ms="1279" started-at="2021-08-01T10:14:56Z" finished-at="2021-08-01T10:14:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLastDeletedBooking -->
-        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="afterMethod" is-config="true" duration-ms="4" started-at="2021-08-01T09:20:16Z" finished-at="2021-08-01T09:20:16Z">
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T10:14:57Z" finished-at="2021-08-01T10:14:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getLastDeletedBooking status=SUCCESS method=TestCasesNewBooking.getLastDeletedBooking()[pri:9, instance:testcases.TestCasesNewBooking@47987356] output={null}]]]>
+                <![CDATA[[TestResult name=getLastDeletedBooking status=SUCCESS method=TestCasesNewBooking.getLastDeletedBooking()[pri:9, instance:testcases.TestCasesNewBooking@4149c063] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="tearDownFramework()[pri:0, instance:testcases.TestCasesNewBooking@47987356]" name="tearDownFramework" is-config="true" duration-ms="315" started-at="2021-08-01T09:20:16Z" finished-at="2021-08-01T09:20:17Z">
+        <test-method status="PASS" signature="tearDownFramework()[pri:0, instance:testcases.TestCasesNewBooking@4149c063]" name="tearDownFramework" is-config="true" duration-ms="409" started-at="2021-08-01T10:14:57Z" finished-at="2021-08-01T10:14:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownFramework -->

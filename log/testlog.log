@@ -14440,3 +14440,3683 @@ Not Found
 
 2021-08-01 17:21:54,334 - utilities.APIBase -INFO - ================================================================================== 
 
+2021-08-01 17:26:28,227 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:28,235 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking started
+2021-08-01 17:26:28,251 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 17:26:33,255 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=162
+Etag=W/"a2-6T9duc0Mx4wOUMlYOOfW9ifw2SM"
+Date=Sun, 01 Aug 2021 09:26:32 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:33,256 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 17:26:33,259 - utilities.APIBase -INFO - Response is Here 
+[{"bookingid":6},{"bookingid":9},{"bookingid":4},{"bookingid":10},{"bookingid":8},{"bookingid":7},{"bookingid":3},{"bookingid":2},{"bookingid":1},{"bookingid":5}]
+2021-08-01 17:26:33,265 - utilities.APIBase -INFO - API Response Time is 3935
+2021-08-01 17:26:34,283 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking finished
+
+2021-08-01 17:26:34,284 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:34,289 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:34,289 - utilities.APIBase -INFO - Execution of Test Case:- getExistingBookingById started
+2021-08-01 17:26:34,292 - testcases.TestCasesExistingBooking -INFO - Fetching Details for Existing BookingId --->6
+2021-08-01 17:26:34,297 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/6
+2021-08-01 17:26:35,635 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=142
+Etag=W/"8e-l4Iv4IbqMz7GgPY7A7q6CMa/Pug"
+Date=Sun, 01 Aug 2021 09:26:35 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:35,638 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/6
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 17:26:35,642 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Sally","lastname":"Wilson","totalprice":299,"depositpaid":false,"bookingdates":{"checkin":"2015-03-29","checkout":"2020-06-28"}}
+2021-08-01 17:26:35,652 - utilities.APIBase -INFO - API Response Time is 1306
+2021-08-01 17:26:35,800 - utilities.APIBase -INFO - Execution of Test Case:- getExistingBookingById finished
+
+2021-08-01 17:26:35,805 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:35,809 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:35,810 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBookingWithoutToken started
+2021-08-01 17:26:36,195 - testcases.TestCasesExistingBooking -INFO - Updating BookingId --->6with bookingDetailsRequest-->Bookingdetails(firstname=Bobbie, lastname=Terry, totalprice=87, depositpaid=false, bookingdates=Bookingdates(checkin=2021-12-01, checkout=2022-12-01), additionalneeds= #_ _)
+2021-08-01 17:26:36,264 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/6
+2021-08-01 17:26:37,720 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+Date=Sun, 01 Aug 2021 09:26:37 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:37,722 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/6
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Bobbie",
+    "lastname": "Terry",
+    "totalprice": 87,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": " #_ _"
+}
+
+2021-08-01 17:26:37,726 - utilities.APIBase -INFO - Response is Here 
+Forbidden
+2021-08-01 17:26:37,730 - utilities.APIBase -INFO - API Response Time is 1314
+2021-08-01 17:26:37,740 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBookingWithoutToken finished
+
+2021-08-01 17:26:37,741 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:37,746 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:37,748 - utilities.APIBase -INFO - Execution of Test Case:- patchExistingBookingWithoutToken started
+2021-08-01 17:26:37,752 - testcases.TestCasesExistingBooking -INFO - PATCH Existing BookingId --->6
+2021-08-01 17:26:37,985 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/6
+2021-08-01 17:26:39,521 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+Date=Sun, 01 Aug 2021 09:26:39 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:39,524 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/6
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Jae",
+    "lastname": "O'Hara",
+    "totalprice": 79,
+    "depositpaid": false
+}
+
+2021-08-01 17:26:39,526 - utilities.APIBase -INFO - Response is Here 
+Forbidden
+2021-08-01 17:26:39,528 - utilities.APIBase -INFO - API Response Time is 1368
+2021-08-01 17:26:39,534 - utilities.APIBase -INFO - Execution of Test Case:- patchExistingBookingWithoutToken finished
+
+2021-08-01 17:26:39,535 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:39,541 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:39,542 - utilities.APIBase -INFO - Execution of Test Case:- generateToken started
+2021-08-01 17:26:39,560 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/auth
+2021-08-01 17:26:40,905 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=27
+Etag=W/"1b-z4KwXAZ9Kg98FtAb2cufnh/NHI4"
+Date=Sun, 01 Aug 2021 09:26:40 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:40,907 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+2021-08-01 17:26:40,910 - utilities.APIBase -INFO - Response is Here 
+{"token":"3684b27c5b22446"}
+2021-08-01 17:26:40,913 - utilities.APIBase -INFO - API Response Time is 1285
+2021-08-01 17:26:41,798 - testcases.TestCasesExistingBooking -INFO - Token created From AUTH API is --->3684b27c5b22446
+2021-08-01 17:26:41,806 - utilities.APIBase -INFO - Execution of Test Case:- generateToken finished
+
+2021-08-01 17:26:41,807 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:41,811 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:41,812 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBooking started
+2021-08-01 17:26:41,878 - testcases.TestCasesExistingBooking -INFO - Updating BookingId --->6with bookingDetailsRequest-->Bookingdetails(firstname=Enrique, lastname=Stark, totalprice=1, depositpaid=false, bookingdates=Bookingdates(checkin=2021-12-01, checkout=2022-12-01), additionalneeds=t  &&)
+2021-08-01 17:26:41,883 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/6
+2021-08-01 17:26:43,314 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=167
+Etag=W/"a7-uqqqBDA/guBA5nOoD1tEZM2+pS0"
+Date=Sun, 01 Aug 2021 09:26:42 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:43,316 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/6
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 3684b27c5b22446
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Enrique",
+    "lastname": "Stark",
+    "totalprice": 1,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "t  &&"
+}
+
+2021-08-01 17:26:43,319 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Enrique","lastname":"Stark","totalprice":1,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"t  &&"}
+2021-08-01 17:26:43,325 - utilities.APIBase -INFO - API Response Time is 1398
+2021-08-01 17:26:43,476 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBooking finished
+
+2021-08-01 17:26:43,478 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:43,487 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:43,490 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedExistingBooking started
+2021-08-01 17:26:43,496 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/6
+2021-08-01 17:26:45,053 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=167
+Etag=W/"a7-uqqqBDA/guBA5nOoD1tEZM2+pS0"
+Date=Sun, 01 Aug 2021 09:26:44 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:45,055 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/6
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 17:26:45,058 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Enrique","lastname":"Stark","totalprice":1,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"t  &&"}
+2021-08-01 17:26:45,059 - utilities.APIBase -INFO - API Response Time is 1533
+2021-08-01 17:26:45,122 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedExistingBooking finished
+
+2021-08-01 17:26:45,123 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:45,131 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:45,136 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedExistingBooking started
+2021-08-01 17:26:45,253 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/6
+2021-08-01 17:26:46,695 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=172
+Etag=W/"ac-rRJ3vCf1em+DyTCVmOosBuhn7v8"
+Date=Sun, 01 Aug 2021 09:26:46 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:46,698 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/6
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 3684b27c5b22446
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Aletha",
+    "lastname": "Cartwright",
+    "totalprice": 87,
+    "depositpaid": false
+}
+
+2021-08-01 17:26:46,705 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Aletha","lastname":"Cartwright","totalprice":87,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"t  &&"}
+2021-08-01 17:26:46,707 - utilities.APIBase -INFO - API Response Time is 1420
+2021-08-01 17:26:46,710 - testcases.TestCasesExistingBooking -INFO - PATCH Response-->{"firstname":"Aletha","lastname":"Cartwright","totalprice":87,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"t  &&"}
+2021-08-01 17:26:46,764 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedExistingBooking finished
+
+2021-08-01 17:26:46,765 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:46,776 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:46,782 - utilities.APIBase -INFO - Execution of Test Case:- deleteExistingBooking started
+2021-08-01 17:26:46,786 - testcases.TestCasesExistingBooking -INFO - Deleting Existing BookingId --->6
+2021-08-01 17:26:46,791 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/6
+2021-08-01 17:26:48,224 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=7
+Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Date=Sun, 01 Aug 2021 09:26:47 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:48,226 - utilities.APIBase -INFO - Request is Here 
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/6
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 3684b27c5b22446
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 17:26:48,229 - utilities.APIBase -INFO - Response is Here 
+Created
+2021-08-01 17:26:48,231 - utilities.APIBase -INFO - API Response Time is 1388
+2021-08-01 17:26:48,236 - utilities.APIBase -INFO - Execution of Test Case:- deleteExistingBooking finished
+
+2021-08-01 17:26:48,237 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:48,309 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:48,309 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking started
+2021-08-01 17:26:48,313 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 17:26:49,865 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=146
+Etag=W/"92-xbQj0rnRJDEF9sO0rXehb+VS76s"
+Date=Sun, 01 Aug 2021 09:26:49 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:49,867 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 17:26:49,871 - utilities.APIBase -INFO - Response is Here 
+[{"bookingid":9},{"bookingid":4},{"bookingid":10},{"bookingid":8},{"bookingid":7},{"bookingid":3},{"bookingid":2},{"bookingid":1},{"bookingid":5}]
+2021-08-01 17:26:49,877 - utilities.APIBase -INFO - API Response Time is 1505
+2021-08-01 17:26:49,932 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking finished
+
+2021-08-01 17:26:49,934 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:49,942 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:49,947 - utilities.APIBase -INFO - Execution of Test Case:- createBooking started
+2021-08-01 17:26:50,148 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 17:26:51,704 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=195
+Etag=W/"c3-kytihTi9yGbTnAXKv1Tkx9e7TS4"
+Date=Sun, 01 Aug 2021 09:26:51 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:51,704 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Douglass",
+    "lastname": "Mraz",
+    "totalprice": 31,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": " O_Mf"
+}
+
+2021-08-01 17:26:51,705 - utilities.APIBase -INFO - Response is Here 
+{"bookingid":11,"booking":{"firstname":"Douglass","lastname":"Mraz","totalprice":31,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":" O_Mf"}}
+2021-08-01 17:26:51,706 - utilities.APIBase -INFO - API Response Time is 1519
+2021-08-01 17:26:51,725 - testcases.TestCasesNewBooking -INFO - Booking id created is--->11
+2021-08-01 17:26:51,750 - utilities.APIBase -INFO - Execution of Test Case:- createBooking finished
+
+2021-08-01 17:26:51,751 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:51,752 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:51,753 - utilities.APIBase -INFO - Execution of Test Case:- getLastCreatedBookingById started
+2021-08-01 17:26:51,756 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/11
+2021-08-01 17:26:53,243 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=168
+Etag=W/"a8-5PHDfuUhV4WmBI0V9ko9h+7IKfA"
+Date=Sun, 01 Aug 2021 09:26:52 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:53,244 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 17:26:53,246 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Douglass","lastname":"Mraz","totalprice":31,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":" O_Mf"}
+2021-08-01 17:26:53,249 - utilities.APIBase -INFO - API Response Time is 1464
+2021-08-01 17:26:53,294 - utilities.APIBase -INFO - Execution of Test Case:- getLastCreatedBookingById finished
+
+2021-08-01 17:26:53,295 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:53,300 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:53,301 - utilities.APIBase -INFO - Execution of Test Case:- generateToken started
+2021-08-01 17:26:53,311 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/auth
+2021-08-01 17:26:54,776 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=27
+Etag=W/"1b-dY3oYoYyBctq8IOQguy41wTLnPQ"
+Date=Sun, 01 Aug 2021 09:26:54 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:54,777 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+2021-08-01 17:26:54,777 - utilities.APIBase -INFO - Response is Here 
+{"token":"f02ce1fd0738baf"}
+2021-08-01 17:26:54,778 - utilities.APIBase -INFO - API Response Time is 1432
+2021-08-01 17:26:54,794 - testcases.TestCasesNewBooking -INFO - Token created From AUTH API is --->f02ce1fd0738baf
+2021-08-01 17:26:54,794 - utilities.APIBase -INFO - Execution of Test Case:- generateToken finished
+
+2021-08-01 17:26:54,795 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:54,796 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:54,796 - utilities.APIBase -INFO - Execution of Test Case:- updateLastCreatedBooking started
+2021-08-01 17:26:54,858 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/11
+2021-08-01 17:26:56,245 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=167
+Etag=W/"a7-z+NySvH1+dDCnl2GNyAY8/cH9OM"
+Date=Sun, 01 Aug 2021 09:26:56 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:56,246 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= f02ce1fd0738baf
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Wayne",
+    "lastname": "Bednar",
+    "totalprice": 78,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "_s_@6"
+}
+
+2021-08-01 17:26:56,247 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Wayne","lastname":"Bednar","totalprice":78,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"_s_@6"}
+2021-08-01 17:26:56,248 - utilities.APIBase -INFO - API Response Time is 1352
+2021-08-01 17:26:56,274 - utilities.APIBase -INFO - Execution of Test Case:- updateLastCreatedBooking finished
+
+2021-08-01 17:26:56,275 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:56,279 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:56,280 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedBooking started
+2021-08-01 17:26:56,284 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/11
+2021-08-01 17:26:57,773 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=167
+Etag=W/"a7-z+NySvH1+dDCnl2GNyAY8/cH9OM"
+Date=Sun, 01 Aug 2021 09:26:57 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:57,775 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 17:26:57,776 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Wayne","lastname":"Bednar","totalprice":78,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"_s_@6"}
+2021-08-01 17:26:57,777 - utilities.APIBase -INFO - API Response Time is 1471
+2021-08-01 17:26:57,804 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedBooking finished
+
+2021-08-01 17:26:57,806 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:57,810 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:57,811 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedBooking started
+2021-08-01 17:26:57,870 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/11
+2021-08-01 17:26:59,495 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=168
+Etag=W/"a8-a15WtKOHGKOopexMQ2cQTmFCxmI"
+Date=Sun, 01 Aug 2021 09:26:59 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:26:59,496 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= f02ce1fd0738baf
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Scot",
+    "lastname": "Cummings",
+    "totalprice": 43,
+    "depositpaid": false
+}
+
+2021-08-01 17:26:59,497 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Scot","lastname":"Cummings","totalprice":43,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"_s_@6"}
+2021-08-01 17:26:59,498 - utilities.APIBase -INFO - API Response Time is 1601
+2021-08-01 17:26:59,499 - testcases.TestCasesNewBooking -INFO - PATCH Response-->{"firstname":"Scot","lastname":"Cummings","totalprice":43,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"_s_@6"}
+2021-08-01 17:26:59,528 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedBooking finished
+
+2021-08-01 17:26:59,529 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:59,531 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:26:59,532 - utilities.APIBase -INFO - Execution of Test Case:- deleteLastCreatedBooking started
+2021-08-01 17:26:59,536 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/11
+2021-08-01 17:27:00,921 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=7
+Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Date=Sun, 01 Aug 2021 09:27:00 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:27:00,922 - utilities.APIBase -INFO - Request is Here 
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= f02ce1fd0738baf
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 17:27:00,923 - utilities.APIBase -INFO - Response is Here 
+Created
+2021-08-01 17:27:00,925 - utilities.APIBase -INFO - API Response Time is 1371
+2021-08-01 17:27:00,928 - utilities.APIBase -INFO - Execution of Test Case:- deleteLastCreatedBooking finished
+
+2021-08-01 17:27:00,930 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:27:00,934 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 17:27:00,935 - utilities.APIBase -INFO - Execution of Test Case:- getLastDeletedBooking started
+2021-08-01 17:27:00,938 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/11
+2021-08-01 17:27:02,383 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"
+Date=Sun, 01 Aug 2021 09:27:02 GMT
+Via=1.1 vegur
+
+
+2021-08-01 17:27:02,386 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/11
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 17:27:02,387 - utilities.APIBase -INFO - Response is Here 
+Not Found
+2021-08-01 17:27:02,389 - utilities.APIBase -INFO - API Response Time is 1409
+2021-08-01 17:27:02,392 - utilities.APIBase -INFO - Execution of Test Case:- getLastDeletedBooking finished
+
+2021-08-01 17:27:02,393 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:09,789 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:09,798 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking started
+2021-08-01 18:01:09,814 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:01:13,758 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=179
+Etag=W/"b3-aEWx6oxKcM6ws/I5LNjhh7Fevnw"
+Date=Sun, 01 Aug 2021 10:01:13 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:13,758 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:01:13,761 - utilities.APIBase -INFO - Response is Here 
+[{"bookingid":1},{"bookingid":2},{"bookingid":11},{"bookingid":8},{"bookingid":10},{"bookingid":5},{"bookingid":3},{"bookingid":7},{"bookingid":9},{"bookingid":4},{"bookingid":6}]
+2021-08-01 18:01:13,766 - utilities.APIBase -INFO - API Response Time is 2951
+2021-08-01 18:01:14,620 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking finished
+
+2021-08-01 18:01:14,621 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:14,625 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:14,626 - utilities.APIBase -INFO - Execution of Test Case:- getExistingBookingById started
+2021-08-01 18:01:14,627 - testcases.TestCasesExistingBooking -INFO - Fetching Details for Existing BookingId --->1
+2021-08-01 18:01:14,628 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/1
+2021-08-01 18:01:15,930 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=140
+Etag=W/"8c-ctRRWhAppur0qZ46Cm78ZiDggY8"
+Date=Sun, 01 Aug 2021 10:01:15 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:15,931 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:01:15,932 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Jim","lastname":"Jackson","totalprice":899,"depositpaid":true,"bookingdates":{"checkin":"2019-12-25","checkout":"2021-06-23"}}
+2021-08-01 18:01:15,934 - utilities.APIBase -INFO - API Response Time is 1266
+2021-08-01 18:01:15,959 - utilities.APIBase -INFO - Execution of Test Case:- getExistingBookingById finished
+
+2021-08-01 18:01:15,960 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:15,963 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:15,963 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBookingWithoutToken started
+2021-08-01 18:01:16,337 - testcases.TestCasesExistingBooking -INFO - Updating BookingId --->1with bookingDetailsRequest-->Bookingdetails(firstname=Katelynn, lastname=Klocko, totalprice=50, depositpaid=false, bookingdates=Bookingdates(checkin=2021-12-01, checkout=2022-12-01), additionalneeds=&& r )
+2021-08-01 18:01:16,388 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/1
+2021-08-01 18:01:17,784 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+Date=Sun, 01 Aug 2021 10:01:17 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:17,787 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Katelynn",
+    "lastname": "Klocko",
+    "totalprice": 50,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "&& r "
+}
+
+2021-08-01 18:01:17,790 - utilities.APIBase -INFO - Response is Here 
+Forbidden
+2021-08-01 18:01:17,794 - utilities.APIBase -INFO - API Response Time is 1310
+2021-08-01 18:01:17,799 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBookingWithoutToken finished
+
+2021-08-01 18:01:17,800 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:17,806 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:17,807 - utilities.APIBase -INFO - Execution of Test Case:- patchExistingBookingWithoutToken started
+2021-08-01 18:01:17,808 - testcases.TestCasesExistingBooking -INFO - PATCH Existing BookingId --->1
+2021-08-01 18:01:17,889 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/1
+2021-08-01 18:01:19,289 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+Date=Sun, 01 Aug 2021 10:01:19 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:19,291 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Racheal",
+    "lastname": "Fritsch",
+    "totalprice": 81,
+    "depositpaid": false
+}
+
+2021-08-01 18:01:19,292 - utilities.APIBase -INFO - Response is Here 
+Forbidden
+2021-08-01 18:01:19,294 - utilities.APIBase -INFO - API Response Time is 1277
+2021-08-01 18:01:19,296 - utilities.APIBase -INFO - Execution of Test Case:- patchExistingBookingWithoutToken finished
+
+2021-08-01 18:01:19,296 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:19,299 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:19,300 - utilities.APIBase -INFO - Execution of Test Case:- generateToken started
+2021-08-01 18:01:19,306 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/auth
+2021-08-01 18:01:20,518 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=27
+Etag=W/"1b-m4iwE01Ayq0hFXMCZk4nFHhC6Ac"
+Date=Sun, 01 Aug 2021 10:01:20 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:20,519 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+2021-08-01 18:01:20,519 - utilities.APIBase -INFO - Response is Here 
+{"token":"7dbc5ed0bff5797"}
+2021-08-01 18:01:20,520 - utilities.APIBase -INFO - API Response Time is 1190
+2021-08-01 18:01:21,226 - testcases.TestCasesExistingBooking -INFO - Token created From AUTH API is --->7dbc5ed0bff5797
+2021-08-01 18:01:21,227 - utilities.APIBase -INFO - Execution of Test Case:- generateToken finished
+
+2021-08-01 18:01:21,228 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:21,230 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:21,231 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBooking started
+2021-08-01 18:01:21,292 - testcases.TestCasesExistingBooking -INFO - Updating BookingId --->1with bookingDetailsRequest-->Bookingdetails(firstname=Benjamin, lastname=Hansen, totalprice=86, depositpaid=false, bookingdates=Bookingdates(checkin=2021-12-01, checkout=2022-12-01), additionalneeds=__ibj)
+2021-08-01 18:01:21,296 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/1
+2021-08-01 18:01:22,477 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=170
+Etag=W/"aa-+SiTzuVUxg6vxHX52n9AhzaQA58"
+Date=Sun, 01 Aug 2021 10:01:22 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:22,478 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 7dbc5ed0bff5797
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Benjamin",
+    "lastname": "Hansen",
+    "totalprice": 86,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "__ibj"
+}
+
+2021-08-01 18:01:22,478 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Benjamin","lastname":"Hansen","totalprice":86,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"__ibj"}
+2021-08-01 18:01:22,479 - utilities.APIBase -INFO - API Response Time is 1163
+2021-08-01 18:01:22,521 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBooking finished
+
+2021-08-01 18:01:22,521 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:22,523 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:22,524 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedExistingBooking started
+2021-08-01 18:01:22,526 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/1
+2021-08-01 18:01:23,699 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=170
+Etag=W/"aa-+SiTzuVUxg6vxHX52n9AhzaQA58"
+Date=Sun, 01 Aug 2021 10:01:23 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:23,702 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:01:23,705 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Benjamin","lastname":"Hansen","totalprice":86,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"__ibj"}
+2021-08-01 18:01:23,706 - utilities.APIBase -INFO - API Response Time is 1152
+2021-08-01 18:01:23,731 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedExistingBooking finished
+
+2021-08-01 18:01:23,731 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:23,732 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:23,733 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedExistingBooking started
+2021-08-01 18:01:23,764 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/1
+2021-08-01 18:01:25,392 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=167
+Etag=W/"a7-YfDXfGx0godf5VCOYXHyQUhdxoo"
+Date=Sun, 01 Aug 2021 10:01:25 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:25,393 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 7dbc5ed0bff5797
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Darby",
+    "lastname": "Larson",
+    "totalprice": 13,
+    "depositpaid": false
+}
+
+2021-08-01 18:01:25,396 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Darby","lastname":"Larson","totalprice":13,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"__ibj"}
+2021-08-01 18:01:25,397 - utilities.APIBase -INFO - API Response Time is 1608
+2021-08-01 18:01:25,399 - testcases.TestCasesExistingBooking -INFO - PATCH Response-->{"firstname":"Darby","lastname":"Larson","totalprice":13,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"__ibj"}
+2021-08-01 18:01:25,418 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedExistingBooking finished
+
+2021-08-01 18:01:25,419 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:25,422 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:25,422 - utilities.APIBase -INFO - Execution of Test Case:- deleteExistingBooking started
+2021-08-01 18:01:25,424 - testcases.TestCasesExistingBooking -INFO - Deleting Existing BookingId --->1
+2021-08-01 18:01:25,426 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/1
+2021-08-01 18:01:26,694 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=7
+Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Date=Sun, 01 Aug 2021 10:01:26 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:26,696 - utilities.APIBase -INFO - Request is Here 
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 7dbc5ed0bff5797
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:01:26,699 - utilities.APIBase -INFO - Response is Here 
+Created
+2021-08-01 18:01:26,701 - utilities.APIBase -INFO - API Response Time is 1253
+2021-08-01 18:01:26,707 - utilities.APIBase -INFO - Execution of Test Case:- deleteExistingBooking finished
+
+2021-08-01 18:01:26,708 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:26,738 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:26,738 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking started
+2021-08-01 18:01:26,740 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:01:27,903 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=163
+Etag=W/"a3-duj1egoNLkKV+NAS4FFP8LPebvw"
+Date=Sun, 01 Aug 2021 10:01:27 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:27,904 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:01:27,904 - utilities.APIBase -INFO - Response is Here 
+[{"bookingid":2},{"bookingid":11},{"bookingid":8},{"bookingid":10},{"bookingid":5},{"bookingid":3},{"bookingid":7},{"bookingid":9},{"bookingid":4},{"bookingid":6}]
+2021-08-01 18:01:27,905 - utilities.APIBase -INFO - API Response Time is 1155
+2021-08-01 18:01:27,919 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking finished
+
+2021-08-01 18:01:27,919 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:27,920 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:27,920 - utilities.APIBase -INFO - Execution of Test Case:- createBooking started
+2021-08-01 18:01:27,972 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:01:29,205 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=200
+Etag=W/"c8-uHqK+vS7KBWuywhgSRCw49/yexk"
+Date=Sun, 01 Aug 2021 10:01:28 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:29,207 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Renaldo",
+    "lastname": "Bartoletti",
+    "totalprice": 82,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "+&S_&"
+}
+
+2021-08-01 18:01:29,209 - utilities.APIBase -INFO - Response is Here 
+{"bookingid":18,"booking":{"firstname":"Renaldo","lastname":"Bartoletti","totalprice":82,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"+&S_&"}}
+2021-08-01 18:01:29,210 - utilities.APIBase -INFO - API Response Time is 1206
+2021-08-01 18:01:29,246 - testcases.TestCasesNewBooking -INFO - Booking id created is--->18
+2021-08-01 18:01:29,262 - utilities.APIBase -INFO - Execution of Test Case:- createBooking finished
+
+2021-08-01 18:01:29,262 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:29,264 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:29,264 - utilities.APIBase -INFO - Execution of Test Case:- getLastCreatedBookingById started
+2021-08-01 18:01:29,267 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/18
+2021-08-01 18:01:30,432 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=173
+Etag=W/"ad-ZbNiXtsOKPQSftlDs62m6c/rcyk"
+Date=Sun, 01 Aug 2021 10:01:30 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:30,434 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/18
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:01:30,436 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Renaldo","lastname":"Bartoletti","totalprice":82,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"+&S_&"}
+2021-08-01 18:01:30,438 - utilities.APIBase -INFO - API Response Time is 1151
+2021-08-01 18:01:30,464 - utilities.APIBase -INFO - Execution of Test Case:- getLastCreatedBookingById finished
+
+2021-08-01 18:01:30,464 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:30,466 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:30,466 - utilities.APIBase -INFO - Execution of Test Case:- generateToken started
+2021-08-01 18:01:30,470 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/auth
+2021-08-01 18:01:31,632 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=27
+Etag=W/"1b-4k4PLU112b5Psg5sLvnJyJEBsxg"
+Date=Sun, 01 Aug 2021 10:01:31 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:31,634 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+2021-08-01 18:01:31,636 - utilities.APIBase -INFO - Response is Here 
+{"token":"42f5d9ff473defd"}
+2021-08-01 18:01:31,638 - utilities.APIBase -INFO - API Response Time is 1152
+2021-08-01 18:01:31,672 - testcases.TestCasesNewBooking -INFO - Token created From AUTH API is --->42f5d9ff473defd
+2021-08-01 18:01:31,673 - utilities.APIBase -INFO - Execution of Test Case:- generateToken finished
+
+2021-08-01 18:01:31,674 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:31,675 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:31,676 - utilities.APIBase -INFO - Execution of Test Case:- updateLastCreatedBooking started
+2021-08-01 18:01:31,731 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/18
+2021-08-01 18:01:32,996 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=169
+Etag=W/"a9-9XdQQYdn+1NJf+akuN0+SeHS/lo"
+Date=Sun, 01 Aug 2021 10:01:32 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:32,998 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/18
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 42f5d9ff473defd
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Houston",
+    "lastname": "Heaney",
+    "totalprice": 90,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "#& #+"
+}
+
+2021-08-01 18:01:33,000 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Houston","lastname":"Heaney","totalprice":90,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"#& #+"}
+2021-08-01 18:01:33,003 - utilities.APIBase -INFO - API Response Time is 1251
+2021-08-01 18:01:33,042 - utilities.APIBase -INFO - Execution of Test Case:- updateLastCreatedBooking finished
+
+2021-08-01 18:01:33,043 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:33,045 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:33,046 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedBooking started
+2021-08-01 18:01:33,048 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/18
+2021-08-01 18:01:34,234 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=169
+Etag=W/"a9-9XdQQYdn+1NJf+akuN0+SeHS/lo"
+Date=Sun, 01 Aug 2021 10:01:34 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:34,235 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/18
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:01:34,238 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Houston","lastname":"Heaney","totalprice":90,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"#& #+"}
+2021-08-01 18:01:34,239 - utilities.APIBase -INFO - API Response Time is 1171
+2021-08-01 18:01:34,261 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedBooking finished
+
+2021-08-01 18:01:34,261 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:34,263 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:34,264 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedBooking started
+2021-08-01 18:01:34,288 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/18
+2021-08-01 18:01:35,528 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=169
+Etag=W/"a9-3TOtiJuQDRKdYs19TuAcCCvxLGQ"
+Date=Sun, 01 Aug 2021 10:01:35 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:35,529 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/18
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 42f5d9ff473defd
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Ramiro",
+    "lastname": "Gutmann",
+    "totalprice": 57,
+    "depositpaid": false
+}
+
+2021-08-01 18:01:35,530 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Ramiro","lastname":"Gutmann","totalprice":57,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"#& #+"}
+2021-08-01 18:01:35,531 - utilities.APIBase -INFO - API Response Time is 1219
+2021-08-01 18:01:35,532 - testcases.TestCasesNewBooking -INFO - PATCH Response-->{"firstname":"Ramiro","lastname":"Gutmann","totalprice":57,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"#& #+"}
+2021-08-01 18:01:35,552 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedBooking finished
+
+2021-08-01 18:01:35,552 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:35,554 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:35,554 - utilities.APIBase -INFO - Execution of Test Case:- deleteLastCreatedBooking started
+2021-08-01 18:01:35,557 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/18
+2021-08-01 18:01:36,834 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=7
+Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Date=Sun, 01 Aug 2021 10:01:36 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:36,835 - utilities.APIBase -INFO - Request is Here 
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/18
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 42f5d9ff473defd
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:01:36,837 - utilities.APIBase -INFO - Response is Here 
+Created
+2021-08-01 18:01:36,838 - utilities.APIBase -INFO - API Response Time is 1267
+2021-08-01 18:01:36,840 - utilities.APIBase -INFO - Execution of Test Case:- deleteLastCreatedBooking finished
+
+2021-08-01 18:01:36,841 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:36,844 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:01:36,844 - utilities.APIBase -INFO - Execution of Test Case:- getLastDeletedBooking started
+2021-08-01 18:01:36,846 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/18
+2021-08-01 18:01:38,023 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"
+Date=Sun, 01 Aug 2021 10:01:37 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:01:38,025 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/18
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:01:38,027 - utilities.APIBase -INFO - Response is Here 
+Not Found
+2021-08-01 18:01:38,028 - utilities.APIBase -INFO - API Response Time is 1164
+2021-08-01 18:01:38,030 - utilities.APIBase -INFO - Execution of Test Case:- getLastDeletedBooking finished
+
+2021-08-01 18:01:38,032 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:22,946 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:22,955 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking started
+2021-08-01 18:05:22,966 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:05:26,498 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=333
+Etag=W/"14d-jEtUF5sc4CIlCkm+WhH3z9xBswQ"
+Date=Sun, 01 Aug 2021 10:05:26 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:26,499 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:05:26,500 - utilities.APIBase -INFO - Response is Here 
+[{"bookingid":24},{"bookingid":20},{"bookingid":17},{"bookingid":23},{"bookingid":2},{"bookingid":21},{"bookingid":22},{"bookingid":11},{"bookingid":14},{"bookingid":8},{"bookingid":10},{"bookingid":5},{"bookingid":3},{"bookingid":7},{"bookingid":9},{"bookingid":4},{"bookingid":6},{"bookingid":15},{"bookingid":16},{"bookingid":19}]
+2021-08-01 18:05:26,504 - utilities.APIBase -INFO - API Response Time is 2664
+2021-08-01 18:05:27,197 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking finished
+
+2021-08-01 18:05:27,198 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:27,203 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:27,204 - utilities.APIBase -INFO - Execution of Test Case:- getExistingBookingById started
+2021-08-01 18:05:27,206 - testcases.TestCasesExistingBooking -INFO - Fetching Details for Existing BookingId --->24
+2021-08-01 18:05:27,208 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/24
+2021-08-01 18:05:28,422 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=174
+Etag=W/"ae-jnOtM0dTp2ENZq0iuQeTySFHkDY"
+Date=Sun, 01 Aug 2021 10:05:28 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:28,425 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/24
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:05:28,429 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Orimidara","lastname":"Prime","totalprice":111,"depositpaid":true,"bookingdates":{"checkin":"2018-01-01","checkout":"2019-01-01"},"additionalneeds":"Breakfast"}
+2021-08-01 18:05:28,434 - utilities.APIBase -INFO - API Response Time is 1179
+2021-08-01 18:05:28,459 - utilities.APIBase -INFO - Execution of Test Case:- getExistingBookingById finished
+
+2021-08-01 18:05:28,460 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:28,461 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:28,463 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBookingWithoutToken started
+2021-08-01 18:05:28,799 - testcases.TestCasesExistingBooking -INFO - Updating BookingId --->24with bookingDetailsRequest-->Bookingdetails(firstname=Del, lastname=Rau, totalprice=23, depositpaid=false, bookingdates=Bookingdates(checkin=2021-12-01, checkout=2022-12-01), additionalneeds=2#&3#)
+2021-08-01 18:05:28,852 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/24
+2021-08-01 18:05:30,224 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+Date=Sun, 01 Aug 2021 10:05:29 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:30,226 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/24
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Del",
+    "lastname": "Rau",
+    "totalprice": 23,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "2#&3#"
+}
+
+2021-08-01 18:05:30,232 - utilities.APIBase -INFO - Response is Here 
+Forbidden
+2021-08-01 18:05:30,234 - utilities.APIBase -INFO - API Response Time is 1297
+2021-08-01 18:05:30,239 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBookingWithoutToken finished
+
+2021-08-01 18:05:30,240 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:30,250 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:30,251 - utilities.APIBase -INFO - Execution of Test Case:- patchExistingBookingWithoutToken started
+2021-08-01 18:05:30,253 - testcases.TestCasesExistingBooking -INFO - PATCH Existing BookingId --->24
+2021-08-01 18:05:30,338 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/24
+2021-08-01 18:05:31,780 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+Date=Sun, 01 Aug 2021 10:05:31 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:31,782 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/24
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Roseann",
+    "lastname": "Padberg",
+    "totalprice": 68,
+    "depositpaid": false
+}
+
+2021-08-01 18:05:31,786 - utilities.APIBase -INFO - Response is Here 
+Forbidden
+2021-08-01 18:05:31,788 - utilities.APIBase -INFO - API Response Time is 1235
+2021-08-01 18:05:31,793 - utilities.APIBase -INFO - Execution of Test Case:- patchExistingBookingWithoutToken finished
+
+2021-08-01 18:05:31,795 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:31,799 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:31,800 - utilities.APIBase -INFO - Execution of Test Case:- generateToken started
+2021-08-01 18:05:31,810 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/auth
+2021-08-01 18:05:33,130 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=27
+Etag=W/"1b-A+z7LpcHrdrBanOimHXMEdn54uI"
+Date=Sun, 01 Aug 2021 10:05:32 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:33,132 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+2021-08-01 18:05:33,134 - utilities.APIBase -INFO - Response is Here 
+{"token":"0eae15e608ecafd"}
+2021-08-01 18:05:33,137 - utilities.APIBase -INFO - API Response Time is 1303
+2021-08-01 18:05:34,023 - testcases.TestCasesExistingBooking -INFO - Token created From AUTH API is --->0eae15e608ecafd
+2021-08-01 18:05:34,025 - utilities.APIBase -INFO - Execution of Test Case:- generateToken finished
+
+2021-08-01 18:05:34,025 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:34,026 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:34,026 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBooking started
+2021-08-01 18:05:34,069 - testcases.TestCasesExistingBooking -INFO - Updating BookingId --->24with bookingDetailsRequest-->Bookingdetails(firstname=Wilbur, lastname=Reilly, totalprice=51, depositpaid=false, bookingdates=Bookingdates(checkin=2021-12-01, checkout=2022-12-01), additionalneeds=#i + )
+2021-08-01 18:05:34,073 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/24
+2021-08-01 18:05:35,271 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=168
+Etag=W/"a8-BoJPOJZ3B8N5FDTPpdRkzKXaBus"
+Date=Sun, 01 Aug 2021 10:05:35 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:35,272 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/24
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 0eae15e608ecafd
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Wilbur",
+    "lastname": "Reilly",
+    "totalprice": 51,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "#i + "
+}
+
+2021-08-01 18:05:35,273 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Wilbur","lastname":"Reilly","totalprice":51,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"#i + "}
+2021-08-01 18:05:35,274 - utilities.APIBase -INFO - API Response Time is 1177
+2021-08-01 18:05:35,308 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBooking finished
+
+2021-08-01 18:05:35,308 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:35,310 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:35,311 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedExistingBooking started
+2021-08-01 18:05:35,314 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/24
+2021-08-01 18:05:36,521 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=168
+Etag=W/"a8-BoJPOJZ3B8N5FDTPpdRkzKXaBus"
+Date=Sun, 01 Aug 2021 10:05:36 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:36,523 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/24
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:05:36,525 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Wilbur","lastname":"Reilly","totalprice":51,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"#i + "}
+2021-08-01 18:05:36,527 - utilities.APIBase -INFO - API Response Time is 1182
+2021-08-01 18:05:36,551 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedExistingBooking finished
+
+2021-08-01 18:05:36,551 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:36,552 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:36,553 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedExistingBooking started
+2021-08-01 18:05:36,585 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/24
+2021-08-01 18:05:37,783 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=168
+Etag=W/"a8-H7JmjFT4Wb3a0/DoR9ORchJlsDc"
+Date=Sun, 01 Aug 2021 10:05:37 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:37,786 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/24
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 0eae15e608ecafd
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Caroyln",
+    "lastname": "Grant",
+    "totalprice": 39,
+    "depositpaid": false
+}
+
+2021-08-01 18:05:37,792 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Caroyln","lastname":"Grant","totalprice":39,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"#i + "}
+2021-08-01 18:05:37,794 - utilities.APIBase -INFO - API Response Time is 1181
+2021-08-01 18:05:37,796 - testcases.TestCasesExistingBooking -INFO - PATCH Response-->{"firstname":"Caroyln","lastname":"Grant","totalprice":39,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"#i + "}
+2021-08-01 18:05:37,819 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedExistingBooking finished
+
+2021-08-01 18:05:37,820 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:37,821 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:37,822 - utilities.APIBase -INFO - Execution of Test Case:- deleteExistingBooking started
+2021-08-01 18:05:37,823 - testcases.TestCasesExistingBooking -INFO - Deleting Existing BookingId --->24
+2021-08-01 18:05:37,825 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/24
+2021-08-01 18:05:38,992 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=7
+Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Date=Sun, 01 Aug 2021 10:05:38 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:38,994 - utilities.APIBase -INFO - Request is Here 
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/24
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 0eae15e608ecafd
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:05:38,997 - utilities.APIBase -INFO - Response is Here 
+Created
+2021-08-01 18:05:38,999 - utilities.APIBase -INFO - API Response Time is 1154
+2021-08-01 18:05:39,004 - utilities.APIBase -INFO - Execution of Test Case:- deleteExistingBooking finished
+
+2021-08-01 18:05:39,004 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:39,034 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:39,034 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking started
+2021-08-01 18:05:39,036 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:05:40,240 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=316
+Etag=W/"13c-/7h43oh9mnQ80BiKCdOc/UBczjU"
+Date=Sun, 01 Aug 2021 10:05:40 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:40,241 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:05:40,242 - utilities.APIBase -INFO - Response is Here 
+[{"bookingid":20},{"bookingid":17},{"bookingid":23},{"bookingid":2},{"bookingid":21},{"bookingid":22},{"bookingid":11},{"bookingid":14},{"bookingid":8},{"bookingid":10},{"bookingid":5},{"bookingid":3},{"bookingid":7},{"bookingid":9},{"bookingid":4},{"bookingid":6},{"bookingid":15},{"bookingid":16},{"bookingid":19}]
+2021-08-01 18:05:40,245 - utilities.APIBase -INFO - API Response Time is 1193
+2021-08-01 18:05:40,262 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking finished
+
+2021-08-01 18:05:40,263 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:40,265 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:40,265 - utilities.APIBase -INFO - Execution of Test Case:- createBooking started
+2021-08-01 18:05:40,301 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:05:41,558 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=200
+Etag=W/"c8-m6Ifrir7zfHmphZO+wb8CDLoepo"
+Date=Sun, 01 Aug 2021 10:05:41 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:41,560 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Mohammad",
+    "lastname": "Gleichner",
+    "totalprice": 18,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "&2#_+"
+}
+
+2021-08-01 18:05:41,562 - utilities.APIBase -INFO - Response is Here 
+{"bookingid":25,"booking":{"firstname":"Mohammad","lastname":"Gleichner","totalprice":18,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"&2#_+"}}
+2021-08-01 18:05:41,564 - utilities.APIBase -INFO - API Response Time is 1240
+2021-08-01 18:05:41,590 - testcases.TestCasesNewBooking -INFO - Booking id created is--->25
+2021-08-01 18:05:41,606 - utilities.APIBase -INFO - Execution of Test Case:- createBooking finished
+
+2021-08-01 18:05:41,606 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:41,608 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:41,608 - utilities.APIBase -INFO - Execution of Test Case:- getLastCreatedBookingById started
+2021-08-01 18:05:41,610 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/25
+2021-08-01 18:05:42,884 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=173
+Etag=W/"ad-wset02KlOkjAZZnYu94OEK79GU4"
+Date=Sun, 01 Aug 2021 10:05:42 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:42,886 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/25
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:05:42,894 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Mohammad","lastname":"Gleichner","totalprice":18,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"&2#_+"}
+2021-08-01 18:05:42,896 - utilities.APIBase -INFO - API Response Time is 1261
+2021-08-01 18:05:42,914 - utilities.APIBase -INFO - Execution of Test Case:- getLastCreatedBookingById finished
+
+2021-08-01 18:05:42,914 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:42,915 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:42,915 - utilities.APIBase -INFO - Execution of Test Case:- generateToken started
+2021-08-01 18:05:42,918 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/auth
+2021-08-01 18:05:44,102 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=27
+Etag=W/"1b-P1e+WpfkANSAfxOzprWvbynZlXY"
+Date=Sun, 01 Aug 2021 10:05:43 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:44,104 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+2021-08-01 18:05:44,106 - utilities.APIBase -INFO - Response is Here 
+{"token":"05569a3c90ffb34"}
+2021-08-01 18:05:44,108 - utilities.APIBase -INFO - API Response Time is 1169
+2021-08-01 18:05:44,131 - testcases.TestCasesNewBooking -INFO - Token created From AUTH API is --->05569a3c90ffb34
+2021-08-01 18:05:44,133 - utilities.APIBase -INFO - Execution of Test Case:- generateToken finished
+
+2021-08-01 18:05:44,133 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:44,135 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:44,135 - utilities.APIBase -INFO - Execution of Test Case:- updateLastCreatedBooking started
+2021-08-01 18:05:44,163 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/25
+2021-08-01 18:05:45,330 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=166
+Etag=W/"a6-HENygWF4rzHLUw/GiGTKvB4/MTk"
+Date=Sun, 01 Aug 2021 10:05:45 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:45,331 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/25
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 05569a3c90ffb34
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Marlys",
+    "lastname": "Haag",
+    "totalprice": 73,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "7&#g+"
+}
+
+2021-08-01 18:05:45,333 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Marlys","lastname":"Haag","totalprice":73,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"7&#g+"}
+2021-08-01 18:05:45,335 - utilities.APIBase -INFO - API Response Time is 1148
+2021-08-01 18:05:45,358 - utilities.APIBase -INFO - Execution of Test Case:- updateLastCreatedBooking finished
+
+2021-08-01 18:05:45,358 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:45,360 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:45,360 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedBooking started
+2021-08-01 18:05:45,362 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/25
+2021-08-01 18:05:46,584 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=166
+Etag=W/"a6-HENygWF4rzHLUw/GiGTKvB4/MTk"
+Date=Sun, 01 Aug 2021 10:05:46 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:46,585 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/25
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:05:46,587 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Marlys","lastname":"Haag","totalprice":73,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"7&#g+"}
+2021-08-01 18:05:46,589 - utilities.APIBase -INFO - API Response Time is 1209
+2021-08-01 18:05:46,612 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedBooking finished
+
+2021-08-01 18:05:46,613 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:46,614 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:46,615 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedBooking started
+2021-08-01 18:05:46,639 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/25
+2021-08-01 18:05:47,842 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=173
+Etag=W/"ad-OdnE/wMjzT17ph5Eo+XkP5kheIU"
+Date=Sun, 01 Aug 2021 10:05:47 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:47,844 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/25
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 05569a3c90ffb34
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Cheyenne",
+    "lastname": "Considine",
+    "totalprice": 94,
+    "depositpaid": false
+}
+
+2021-08-01 18:05:47,845 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Cheyenne","lastname":"Considine","totalprice":94,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"7&#g+"}
+2021-08-01 18:05:47,847 - utilities.APIBase -INFO - API Response Time is 1181
+2021-08-01 18:05:47,849 - testcases.TestCasesNewBooking -INFO - PATCH Response-->{"firstname":"Cheyenne","lastname":"Considine","totalprice":94,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"7&#g+"}
+2021-08-01 18:05:47,869 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedBooking finished
+
+2021-08-01 18:05:47,869 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:47,870 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:47,871 - utilities.APIBase -INFO - Execution of Test Case:- deleteLastCreatedBooking started
+2021-08-01 18:05:47,873 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/25
+2021-08-01 18:05:49,161 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=7
+Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Date=Sun, 01 Aug 2021 10:05:48 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:49,162 - utilities.APIBase -INFO - Request is Here 
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/25
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 05569a3c90ffb34
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:05:49,164 - utilities.APIBase -INFO - Response is Here 
+Created
+2021-08-01 18:05:49,166 - utilities.APIBase -INFO - API Response Time is 1278
+2021-08-01 18:05:49,170 - utilities.APIBase -INFO - Execution of Test Case:- deleteLastCreatedBooking finished
+
+2021-08-01 18:05:49,171 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:49,175 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:05:49,177 - utilities.APIBase -INFO - Execution of Test Case:- getLastDeletedBooking started
+2021-08-01 18:05:49,182 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/25
+2021-08-01 18:05:50,446 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"
+Date=Sun, 01 Aug 2021 10:05:50 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:05:50,447 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/25
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:05:50,449 - utilities.APIBase -INFO - Response is Here 
+Not Found
+2021-08-01 18:05:50,450 - utilities.APIBase -INFO - API Response Time is 1246
+2021-08-01 18:05:50,452 - utilities.APIBase -INFO - Execution of Test Case:- getLastDeletedBooking finished
+
+2021-08-01 18:05:50,454 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:15,015 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:15,022 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking started
+2021-08-01 18:07:15,034 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:07:18,434 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=384
+Etag=W/"180-HUiG8t+0JzZKyWNCJOa4xZhOehs"
+Date=Sun, 01 Aug 2021 10:07:18 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:18,437 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:07:18,439 - utilities.APIBase -INFO - Response is Here 
+[{"bookingid":20},{"bookingid":17},{"bookingid":23},{"bookingid":2},{"bookingid":26},{"bookingid":27},{"bookingid":21},{"bookingid":22},{"bookingid":11},{"bookingid":14},{"bookingid":8},{"bookingid":10},{"bookingid":5},{"bookingid":3},{"bookingid":7},{"bookingid":9},{"bookingid":28},{"bookingid":4},{"bookingid":6},{"bookingid":15},{"bookingid":16},{"bookingid":19},{"bookingid":29}]
+2021-08-01 18:07:18,447 - utilities.APIBase -INFO - API Response Time is 2575
+2021-08-01 18:07:19,127 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking finished
+
+2021-08-01 18:07:19,128 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:19,133 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:19,133 - utilities.APIBase -INFO - Execution of Test Case:- getExistingBookingById started
+2021-08-01 18:07:19,135 - testcases.TestCasesExistingBooking -INFO - Fetching Details for Existing BookingId --->20
+2021-08-01 18:07:19,137 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/20
+2021-08-01 18:07:20,417 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=140
+Etag=W/"8c-zH5tYf8Z2xVDbhzvXjmGDFHIgmk"
+Date=Sun, 01 Aug 2021 10:07:20 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:20,418 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/20
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:07:20,418 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Jack","lastname":"Idiot","totalprice":2632,"depositpaid":true,"bookingdates":{"checkin":"2021-01-27","checkout":"2100-10-25"}}
+2021-08-01 18:07:20,420 - utilities.APIBase -INFO - API Response Time is 1253
+2021-08-01 18:07:20,448 - utilities.APIBase -INFO - Execution of Test Case:- getExistingBookingById finished
+
+2021-08-01 18:07:20,448 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:20,451 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:20,452 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBookingWithoutToken started
+2021-08-01 18:07:20,784 - testcases.TestCasesExistingBooking -INFO - Updating BookingId --->20with bookingDetailsRequest-->Bookingdetails(firstname=Loriann, lastname=Langworth, totalprice=88, depositpaid=false, bookingdates=Bookingdates(checkin=2021-12-01, checkout=2022-12-01), additionalneeds=_&&#&)
+2021-08-01 18:07:20,837 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/20
+2021-08-01 18:07:22,126 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+Date=Sun, 01 Aug 2021 10:07:21 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:22,129 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/20
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Loriann",
+    "lastname": "Langworth",
+    "totalprice": 88,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "_&&#&"
+}
+
+2021-08-01 18:07:22,133 - utilities.APIBase -INFO - Response is Here 
+Forbidden
+2021-08-01 18:07:22,135 - utilities.APIBase -INFO - API Response Time is 1209
+2021-08-01 18:07:22,138 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBookingWithoutToken finished
+
+2021-08-01 18:07:22,139 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:22,143 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:22,146 - utilities.APIBase -INFO - Execution of Test Case:- patchExistingBookingWithoutToken started
+2021-08-01 18:07:22,147 - testcases.TestCasesExistingBooking -INFO - PATCH Existing BookingId --->20
+2021-08-01 18:07:22,212 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/20
+2021-08-01 18:07:23,515 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+Date=Sun, 01 Aug 2021 10:07:23 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:23,516 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/20
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Haywood",
+    "lastname": "Metz",
+    "totalprice": 31,
+    "depositpaid": false
+}
+
+2021-08-01 18:07:23,519 - utilities.APIBase -INFO - Response is Here 
+Forbidden
+2021-08-01 18:07:23,520 - utilities.APIBase -INFO - API Response Time is 1174
+2021-08-01 18:07:23,525 - utilities.APIBase -INFO - Execution of Test Case:- patchExistingBookingWithoutToken finished
+
+2021-08-01 18:07:23,526 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:23,532 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:23,534 - utilities.APIBase -INFO - Execution of Test Case:- generateToken started
+2021-08-01 18:07:23,543 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/auth
+2021-08-01 18:07:24,749 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=27
+Etag=W/"1b-ATpVL3f/yICYUnGUIExfH6bQXyQ"
+Date=Sun, 01 Aug 2021 10:07:24 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:24,750 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+2021-08-01 18:07:24,752 - utilities.APIBase -INFO - Response is Here 
+{"token":"f76708be2cc22ac"}
+2021-08-01 18:07:24,754 - utilities.APIBase -INFO - API Response Time is 1184
+2021-08-01 18:07:25,477 - testcases.TestCasesExistingBooking -INFO - Token created From AUTH API is --->f76708be2cc22ac
+2021-08-01 18:07:25,479 - utilities.APIBase -INFO - Execution of Test Case:- generateToken finished
+
+2021-08-01 18:07:25,479 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:25,480 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:25,481 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBooking started
+2021-08-01 18:07:25,521 - testcases.TestCasesExistingBooking -INFO - Updating BookingId --->20with bookingDetailsRequest-->Bookingdetails(firstname=Epifania, lastname=Kuphal, totalprice=7, depositpaid=false, bookingdates=Bookingdates(checkin=2021-12-01, checkout=2022-12-01), additionalneeds=_z& g)
+2021-08-01 18:07:25,523 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/20
+2021-08-01 18:07:26,840 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=169
+Etag=W/"a9-+iDaqmHp7Wx8EnwC19J3LAJO0bc"
+Date=Sun, 01 Aug 2021 10:07:26 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:26,842 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/20
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= f76708be2cc22ac
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Epifania",
+    "lastname": "Kuphal",
+    "totalprice": 7,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "_z& g"
+}
+
+2021-08-01 18:07:26,844 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Epifania","lastname":"Kuphal","totalprice":7,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"_z& g"}
+2021-08-01 18:07:26,846 - utilities.APIBase -INFO - API Response Time is 1283
+2021-08-01 18:07:26,883 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBooking finished
+
+2021-08-01 18:07:26,884 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:26,886 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:26,887 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedExistingBooking started
+2021-08-01 18:07:26,889 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/20
+2021-08-01 18:07:28,196 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=169
+Etag=W/"a9-+iDaqmHp7Wx8EnwC19J3LAJO0bc"
+Date=Sun, 01 Aug 2021 10:07:27 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:28,198 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/20
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:07:28,200 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Epifania","lastname":"Kuphal","totalprice":7,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"_z& g"}
+2021-08-01 18:07:28,201 - utilities.APIBase -INFO - API Response Time is 1292
+2021-08-01 18:07:28,224 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedExistingBooking finished
+
+2021-08-01 18:07:28,225 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:28,227 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:28,227 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedExistingBooking started
+2021-08-01 18:07:28,251 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/20
+2021-08-01 18:07:29,440 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=164
+Etag=W/"a4-rHKk6WekymeISJMEZoDLnQDXVBU"
+Date=Sun, 01 Aug 2021 10:07:29 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:29,442 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/20
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= f76708be2cc22ac
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Melita",
+    "lastname": "Kub",
+    "totalprice": 0,
+    "depositpaid": false
+}
+
+2021-08-01 18:07:29,444 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Melita","lastname":"Kub","totalprice":0,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"_z& g"}
+2021-08-01 18:07:29,446 - utilities.APIBase -INFO - API Response Time is 1169
+2021-08-01 18:07:29,450 - testcases.TestCasesExistingBooking -INFO - PATCH Response-->{"firstname":"Melita","lastname":"Kub","totalprice":0,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"_z& g"}
+2021-08-01 18:07:29,472 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedExistingBooking finished
+
+2021-08-01 18:07:29,472 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:29,475 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:29,476 - utilities.APIBase -INFO - Execution of Test Case:- deleteExistingBooking started
+2021-08-01 18:07:29,477 - testcases.TestCasesExistingBooking -INFO - Deleting Existing BookingId --->20
+2021-08-01 18:07:29,479 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/20
+2021-08-01 18:07:30,745 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=7
+Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Date=Sun, 01 Aug 2021 10:07:30 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:30,746 - utilities.APIBase -INFO - Request is Here 
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/20
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= f76708be2cc22ac
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:07:30,747 - utilities.APIBase -INFO - Response is Here 
+Created
+2021-08-01 18:07:30,748 - utilities.APIBase -INFO - API Response Time is 1253
+2021-08-01 18:07:30,750 - utilities.APIBase -INFO - Execution of Test Case:- deleteExistingBooking finished
+
+2021-08-01 18:07:30,750 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:30,778 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:30,778 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking started
+2021-08-01 18:07:30,780 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:07:32,012 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=367
+Etag=W/"16f-bhl6qFJO3c3sxLPBsvKxN+bMkqs"
+Date=Sun, 01 Aug 2021 10:07:31 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:32,012 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:07:32,013 - utilities.APIBase -INFO - Response is Here 
+[{"bookingid":17},{"bookingid":23},{"bookingid":2},{"bookingid":26},{"bookingid":27},{"bookingid":21},{"bookingid":22},{"bookingid":11},{"bookingid":14},{"bookingid":8},{"bookingid":10},{"bookingid":5},{"bookingid":3},{"bookingid":7},{"bookingid":9},{"bookingid":28},{"bookingid":4},{"bookingid":6},{"bookingid":15},{"bookingid":16},{"bookingid":19},{"bookingid":29}]
+2021-08-01 18:07:32,014 - utilities.APIBase -INFO - API Response Time is 1216
+2021-08-01 18:07:32,031 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking finished
+
+2021-08-01 18:07:32,031 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:32,033 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:32,033 - utilities.APIBase -INFO - Execution of Test Case:- createBooking started
+2021-08-01 18:07:32,060 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:07:33,334 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=195
+Etag=W/"c3-WMqUd69tC/YQavajWuiIrRQvLos"
+Date=Sun, 01 Aug 2021 10:07:33 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:33,335 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Jetta",
+    "lastname": "Friesen",
+    "totalprice": 70,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": " & +J"
+}
+
+2021-08-01 18:07:33,336 - utilities.APIBase -INFO - Response is Here 
+{"bookingid":30,"booking":{"firstname":"Jetta","lastname":"Friesen","totalprice":70,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":" & +J"}}
+2021-08-01 18:07:33,337 - utilities.APIBase -INFO - API Response Time is 1252
+2021-08-01 18:07:33,363 - testcases.TestCasesNewBooking -INFO - Booking id created is--->30
+2021-08-01 18:07:33,378 - utilities.APIBase -INFO - Execution of Test Case:- createBooking finished
+
+2021-08-01 18:07:33,378 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:33,379 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:33,380 - utilities.APIBase -INFO - Execution of Test Case:- getLastCreatedBookingById started
+2021-08-01 18:07:33,383 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/30
+2021-08-01 18:07:34,550 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=168
+Etag=W/"a8-4mxCUiD6roQ2hbyNryq0/At25Vo"
+Date=Sun, 01 Aug 2021 10:07:34 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:34,551 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/30
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:07:34,552 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Jetta","lastname":"Friesen","totalprice":70,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":" & +J"}
+2021-08-01 18:07:34,553 - utilities.APIBase -INFO - API Response Time is 1158
+2021-08-01 18:07:34,573 - utilities.APIBase -INFO - Execution of Test Case:- getLastCreatedBookingById finished
+
+2021-08-01 18:07:34,574 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:34,577 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:34,578 - utilities.APIBase -INFO - Execution of Test Case:- generateToken started
+2021-08-01 18:07:34,582 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/auth
+2021-08-01 18:07:35,784 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=27
+Etag=W/"1b-MHbWQRDr/WxVvBVv6gV/xfMO6tM"
+Date=Sun, 01 Aug 2021 10:07:35 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:35,786 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+2021-08-01 18:07:35,787 - utilities.APIBase -INFO - Response is Here 
+{"token":"07841c486dd3288"}
+2021-08-01 18:07:35,789 - utilities.APIBase -INFO - API Response Time is 1191
+2021-08-01 18:07:35,810 - testcases.TestCasesNewBooking -INFO - Token created From AUTH API is --->07841c486dd3288
+2021-08-01 18:07:35,811 - utilities.APIBase -INFO - Execution of Test Case:- generateToken finished
+
+2021-08-01 18:07:35,812 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:35,813 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:35,814 - utilities.APIBase -INFO - Execution of Test Case:- updateLastCreatedBooking started
+2021-08-01 18:07:35,878 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/30
+2021-08-01 18:07:37,176 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=167
+Etag=W/"a7-L5z2dWh+kcp/nRiD/ZuDszt/n3I"
+Date=Sun, 01 Aug 2021 10:07:36 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:37,177 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/30
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 07841c486dd3288
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Margarito",
+    "lastname": "Orn",
+    "totalprice": 7,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "2+_ 9"
+}
+
+2021-08-01 18:07:37,179 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Margarito","lastname":"Orn","totalprice":7,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"2+_ 9"}
+2021-08-01 18:07:37,181 - utilities.APIBase -INFO - API Response Time is 1281
+2021-08-01 18:07:37,203 - utilities.APIBase -INFO - Execution of Test Case:- updateLastCreatedBooking finished
+
+2021-08-01 18:07:37,204 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:37,205 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:37,206 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedBooking started
+2021-08-01 18:07:37,208 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/30
+2021-08-01 18:07:38,380 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=167
+Etag=W/"a7-L5z2dWh+kcp/nRiD/ZuDszt/n3I"
+Date=Sun, 01 Aug 2021 10:07:38 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:38,381 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/30
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:07:38,383 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Margarito","lastname":"Orn","totalprice":7,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"2+_ 9"}
+2021-08-01 18:07:38,384 - utilities.APIBase -INFO - API Response Time is 1162
+2021-08-01 18:07:38,404 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedBooking finished
+
+2021-08-01 18:07:38,405 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:38,407 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:38,408 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedBooking started
+2021-08-01 18:07:38,441 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/30
+2021-08-01 18:07:39,785 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=172
+Etag=W/"ac-XLOsEFUto1lCDJpXwOZWwCmrMCk"
+Date=Sun, 01 Aug 2021 10:07:39 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:39,787 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/30
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 07841c486dd3288
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Caridad",
+    "lastname": "VonRueden",
+    "totalprice": 64,
+    "depositpaid": false
+}
+
+2021-08-01 18:07:39,788 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Caridad","lastname":"VonRueden","totalprice":64,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"2+_ 9"}
+2021-08-01 18:07:39,789 - utilities.APIBase -INFO - API Response Time is 1322
+2021-08-01 18:07:39,790 - testcases.TestCasesNewBooking -INFO - PATCH Response-->{"firstname":"Caridad","lastname":"VonRueden","totalprice":64,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"2+_ 9"}
+2021-08-01 18:07:39,806 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedBooking finished
+
+2021-08-01 18:07:39,806 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:39,807 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:39,808 - utilities.APIBase -INFO - Execution of Test Case:- deleteLastCreatedBooking started
+2021-08-01 18:07:39,810 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/30
+2021-08-01 18:07:41,100 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=7
+Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Date=Sun, 01 Aug 2021 10:07:40 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:41,101 - utilities.APIBase -INFO - Request is Here 
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/30
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 07841c486dd3288
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:07:41,103 - utilities.APIBase -INFO - Response is Here 
+Created
+2021-08-01 18:07:41,105 - utilities.APIBase -INFO - API Response Time is 1282
+2021-08-01 18:07:41,108 - utilities.APIBase -INFO - Execution of Test Case:- deleteLastCreatedBooking finished
+
+2021-08-01 18:07:41,109 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:41,113 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:07:41,114 - utilities.APIBase -INFO - Execution of Test Case:- getLastDeletedBooking started
+2021-08-01 18:07:41,117 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/30
+2021-08-01 18:07:42,392 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"
+Date=Sun, 01 Aug 2021 10:07:42 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:07:42,392 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/30
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:07:42,393 - utilities.APIBase -INFO - Response is Here 
+Not Found
+2021-08-01 18:07:42,393 - utilities.APIBase -INFO - API Response Time is 1259
+2021-08-01 18:07:42,394 - utilities.APIBase -INFO - Execution of Test Case:- getLastDeletedBooking finished
+
+2021-08-01 18:07:42,395 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:29,945 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:29,953 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking started
+2021-08-01 18:14:29,982 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:14:33,726 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=196
+Etag=W/"c4-iD1A212PIYnMfoOlR8dMBNMuWzI"
+Date=Sun, 01 Aug 2021 10:14:33 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:33,726 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:14:33,727 - utilities.APIBase -INFO - Response is Here 
+[{"bookingid":9},{"bookingid":8},{"bookingid":7},{"bookingid":6},{"bookingid":4},{"bookingid":11},{"bookingid":2},{"bookingid":5},{"bookingid":12},{"bookingid":10},{"bookingid":3},{"bookingid":1}]
+2021-08-01 18:14:33,734 - utilities.APIBase -INFO - API Response Time is 2946
+2021-08-01 18:14:34,407 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking finished
+
+2021-08-01 18:14:34,408 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:34,414 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:34,415 - utilities.APIBase -INFO - Execution of Test Case:- getExistingBookingById started
+2021-08-01 18:14:34,418 - testcases.TestCasesExistingBooking -INFO - Fetching Details for Existing BookingId --->9
+2021-08-01 18:14:34,420 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/9
+2021-08-01 18:14:35,940 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=174
+Etag=W/"ae-px7twWHOZTXMJTOkXxInWEHaK3Y"
+Date=Sun, 01 Aug 2021 10:14:35 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:35,943 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:14:35,945 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Sally","lastname":"Ericsson","totalprice":345,"depositpaid":false,"bookingdates":{"checkin":"2017-06-16","checkout":"2017-08-23"},"additionalneeds":"Breakfast"}
+2021-08-01 18:14:35,950 - utilities.APIBase -INFO - API Response Time is 1484
+2021-08-01 18:14:35,972 - utilities.APIBase -INFO - Execution of Test Case:- getExistingBookingById finished
+
+2021-08-01 18:14:35,972 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:35,975 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:35,975 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBookingWithoutToken started
+2021-08-01 18:14:36,317 - testcases.TestCasesExistingBooking -INFO - Updating BookingId --->9with bookingDetailsRequest-->Bookingdetails(firstname=Shannon, lastname=Flatley, totalprice=25, depositpaid=false, bookingdates=Bookingdates(checkin=2021-12-01, checkout=2022-12-01), additionalneeds=+ _9_)
+2021-08-01 18:14:36,372 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/9
+2021-08-01 18:14:37,848 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+Date=Sun, 01 Aug 2021 10:14:37 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:37,850 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Shannon",
+    "lastname": "Flatley",
+    "totalprice": 25,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "+ _9_"
+}
+
+2021-08-01 18:14:37,853 - utilities.APIBase -INFO - Response is Here 
+Forbidden
+2021-08-01 18:14:37,854 - utilities.APIBase -INFO - API Response Time is 1389
+2021-08-01 18:14:37,858 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBookingWithoutToken finished
+
+2021-08-01 18:14:37,859 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:37,862 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:37,866 - utilities.APIBase -INFO - Execution of Test Case:- patchExistingBookingWithoutToken started
+2021-08-01 18:14:37,867 - testcases.TestCasesExistingBooking -INFO - PATCH Existing BookingId --->9
+2021-08-01 18:14:37,921 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/9
+2021-08-01 18:14:39,288 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-PatfYBLj4Um1qTm5zrukoLhNyPU"
+Date=Sun, 01 Aug 2021 10:14:39 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:39,291 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Kristopher",
+    "lastname": "Osinski",
+    "totalprice": 36,
+    "depositpaid": false
+}
+
+2021-08-01 18:14:39,294 - utilities.APIBase -INFO - Response is Here 
+Forbidden
+2021-08-01 18:14:39,297 - utilities.APIBase -INFO - API Response Time is 1252
+2021-08-01 18:14:39,300 - utilities.APIBase -INFO - Execution of Test Case:- patchExistingBookingWithoutToken finished
+
+2021-08-01 18:14:39,301 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:39,304 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:39,305 - utilities.APIBase -INFO - Execution of Test Case:- generateToken started
+2021-08-01 18:14:39,314 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/auth
+2021-08-01 18:14:40,512 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=27
+Etag=W/"1b-xmuFoHsZgYEfY+GaTMswlIWzezY"
+Date=Sun, 01 Aug 2021 10:14:40 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:40,514 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+2021-08-01 18:14:40,517 - utilities.APIBase -INFO - Response is Here 
+{"token":"6d37e5e30baeac4"}
+2021-08-01 18:14:40,521 - utilities.APIBase -INFO - API Response Time is 1176
+2021-08-01 18:14:41,329 - testcases.TestCasesExistingBooking -INFO - Token created From AUTH API is --->6d37e5e30baeac4
+2021-08-01 18:14:41,330 - utilities.APIBase -INFO - Execution of Test Case:- generateToken finished
+
+2021-08-01 18:14:41,331 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:41,333 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:41,334 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBooking started
+2021-08-01 18:14:41,372 - testcases.TestCasesExistingBooking -INFO - Updating BookingId --->9with bookingDetailsRequest-->Bookingdetails(firstname=Ferdinand, lastname=Konopelski, totalprice=5, depositpaid=false, bookingdates=Bookingdates(checkin=2021-12-01, checkout=2022-12-01), additionalneeds=fEl_&)
+2021-08-01 18:14:41,377 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/9
+2021-08-01 18:14:42,554 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=174
+Etag=W/"ae-Apnlblf4eq4HXEmH6Z3CGXuYZqo"
+Date=Sun, 01 Aug 2021 10:14:42 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:42,555 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 6d37e5e30baeac4
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Ferdinand",
+    "lastname": "Konopelski",
+    "totalprice": 5,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "fEl_&"
+}
+
+2021-08-01 18:14:42,558 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Ferdinand","lastname":"Konopelski","totalprice":5,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"fEl_&"}
+2021-08-01 18:14:42,560 - utilities.APIBase -INFO - API Response Time is 1156
+2021-08-01 18:14:42,598 - utilities.APIBase -INFO - Execution of Test Case:- updateExistingBooking finished
+
+2021-08-01 18:14:42,598 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:42,600 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:42,601 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedExistingBooking started
+2021-08-01 18:14:42,602 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/9
+2021-08-01 18:14:43,787 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=174
+Etag=W/"ae-Apnlblf4eq4HXEmH6Z3CGXuYZqo"
+Date=Sun, 01 Aug 2021 10:14:43 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:43,789 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:14:43,791 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Ferdinand","lastname":"Konopelski","totalprice":5,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"fEl_&"}
+2021-08-01 18:14:43,792 - utilities.APIBase -INFO - API Response Time is 1170
+2021-08-01 18:14:43,817 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedExistingBooking finished
+
+2021-08-01 18:14:43,818 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:43,820 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:43,821 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedExistingBooking started
+2021-08-01 18:14:43,849 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/9
+2021-08-01 18:14:45,122 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=173
+Etag=W/"ad-PdbWmRwhtn9m9gwb/iOj0xFP3kU"
+Date=Sun, 01 Aug 2021 10:14:44 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:45,124 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 6d37e5e30baeac4
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Dannette",
+    "lastname": "Schroeder",
+    "totalprice": 43,
+    "depositpaid": false
+}
+
+2021-08-01 18:14:45,127 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Dannette","lastname":"Schroeder","totalprice":43,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"fEl_&"}
+2021-08-01 18:14:45,129 - utilities.APIBase -INFO - API Response Time is 1252
+2021-08-01 18:14:45,130 - testcases.TestCasesExistingBooking -INFO - PATCH Response-->{"firstname":"Dannette","lastname":"Schroeder","totalprice":43,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"fEl_&"}
+2021-08-01 18:14:45,148 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedExistingBooking finished
+
+2021-08-01 18:14:45,148 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:45,150 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:45,151 - utilities.APIBase -INFO - Execution of Test Case:- deleteExistingBooking started
+2021-08-01 18:14:45,152 - testcases.TestCasesExistingBooking -INFO - Deleting Existing BookingId --->9
+2021-08-01 18:14:45,153 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/9
+2021-08-01 18:14:46,440 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=7
+Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Date=Sun, 01 Aug 2021 10:14:46 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:46,441 - utilities.APIBase -INFO - Request is Here 
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 6d37e5e30baeac4
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:14:46,443 - utilities.APIBase -INFO - Response is Here 
+Created
+2021-08-01 18:14:46,445 - utilities.APIBase -INFO - API Response Time is 1273
+2021-08-01 18:14:46,449 - utilities.APIBase -INFO - Execution of Test Case:- deleteExistingBooking finished
+
+2021-08-01 18:14:46,451 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:46,479 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:46,480 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking started
+2021-08-01 18:14:46,481 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:14:47,768 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=180
+Etag=W/"b4-L3fdnpWQVW39dqWE8woa8UK78Vs"
+Date=Sun, 01 Aug 2021 10:14:47 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:47,768 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:14:47,769 - utilities.APIBase -INFO - Response is Here 
+[{"bookingid":8},{"bookingid":7},{"bookingid":6},{"bookingid":4},{"bookingid":11},{"bookingid":2},{"bookingid":5},{"bookingid":12},{"bookingid":10},{"bookingid":3},{"bookingid":1}]
+2021-08-01 18:14:47,772 - utilities.APIBase -INFO - API Response Time is 1273
+2021-08-01 18:14:47,787 - utilities.APIBase -INFO - Execution of Test Case:- getListOfBooking finished
+
+2021-08-01 18:14:47,788 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:47,789 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:47,790 - utilities.APIBase -INFO - Execution of Test Case:- createBooking started
+2021-08-01 18:14:47,828 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking
+2021-08-01 18:14:49,002 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=197
+Etag=W/"c5-vTs2xR3rMqt0Hm8PZ3nAHGMcvMg"
+Date=Sun, 01 Aug 2021 10:14:48 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:49,004 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/booking
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Rheba",
+    "lastname": "Lueilwitz",
+    "totalprice": 89,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "_#X_#"
+}
+
+2021-08-01 18:14:49,006 - utilities.APIBase -INFO - Response is Here 
+{"bookingid":13,"booking":{"firstname":"Rheba","lastname":"Lueilwitz","totalprice":89,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"_#X_#"}}
+2021-08-01 18:14:49,008 - utilities.APIBase -INFO - API Response Time is 1157
+2021-08-01 18:14:49,058 - testcases.TestCasesNewBooking -INFO - Booking id created is--->13
+2021-08-01 18:14:49,075 - utilities.APIBase -INFO - Execution of Test Case:- createBooking finished
+
+2021-08-01 18:14:49,076 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:49,077 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:49,077 - utilities.APIBase -INFO - Execution of Test Case:- getLastCreatedBookingById started
+2021-08-01 18:14:49,080 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/13
+2021-08-01 18:14:50,278 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=170
+Etag=W/"aa-Je2VwvRftKyPWYl31hYD7cT1gUY"
+Date=Sun, 01 Aug 2021 10:14:50 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:50,279 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/13
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:14:50,282 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Rheba","lastname":"Lueilwitz","totalprice":89,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"_#X_#"}
+2021-08-01 18:14:50,284 - utilities.APIBase -INFO - API Response Time is 1186
+2021-08-01 18:14:50,308 - utilities.APIBase -INFO - Execution of Test Case:- getLastCreatedBookingById finished
+
+2021-08-01 18:14:50,309 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:50,310 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:50,311 - utilities.APIBase -INFO - Execution of Test Case:- generateToken started
+2021-08-01 18:14:50,314 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/auth
+2021-08-01 18:14:51,577 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=27
+Etag=W/"1b-pJNkLo9/t5tZYVizyccn8WSvHxk"
+Date=Sun, 01 Aug 2021 10:14:51 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:51,579 - utilities.APIBase -INFO - Request is Here 
+Request method:	POST
+Request URI:	https://restful-booker.herokuapp.com/auth
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "admin",
+    "password": "password123"
+}
+
+2021-08-01 18:14:51,581 - utilities.APIBase -INFO - Response is Here 
+{"token":"98fba921b288b42"}
+2021-08-01 18:14:51,582 - utilities.APIBase -INFO - API Response Time is 1250
+2021-08-01 18:14:51,603 - testcases.TestCasesNewBooking -INFO - Token created From AUTH API is --->98fba921b288b42
+2021-08-01 18:14:51,604 - utilities.APIBase -INFO - Execution of Test Case:- generateToken finished
+
+2021-08-01 18:14:51,605 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:51,607 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:51,608 - utilities.APIBase -INFO - Execution of Test Case:- updateLastCreatedBooking started
+2021-08-01 18:14:51,635 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/13
+2021-08-01 18:14:52,921 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=167
+Etag=W/"a7-z1qVZPgcOd3AepYbib6C9mnSgwc"
+Date=Sun, 01 Aug 2021 10:14:52 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:52,922 - utilities.APIBase -INFO - Request is Here 
+Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/13
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 98fba921b288b42
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Dalila",
+    "lastname": "Mayer",
+    "totalprice": 45,
+    "depositpaid": false,
+    "bookingdates": {
+        "checkin": "2021-12-01",
+        "checkout": "2022-12-01"
+    },
+    "additionalneeds": "++#&+"
+}
+
+2021-08-01 18:14:52,922 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Dalila","lastname":"Mayer","totalprice":45,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"++#&+"}
+2021-08-01 18:14:52,923 - utilities.APIBase -INFO - API Response Time is 1268
+2021-08-01 18:14:52,935 - utilities.APIBase -INFO - Execution of Test Case:- updateLastCreatedBooking finished
+
+2021-08-01 18:14:52,935 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:52,936 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:52,936 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedBooking started
+2021-08-01 18:14:52,938 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/13
+2021-08-01 18:14:54,082 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=167
+Etag=W/"a7-z1qVZPgcOd3AepYbib6C9mnSgwc"
+Date=Sun, 01 Aug 2021 10:14:53 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:54,082 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/13
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:14:54,083 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Dalila","lastname":"Mayer","totalprice":45,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"++#&+"}
+2021-08-01 18:14:54,084 - utilities.APIBase -INFO - API Response Time is 1135
+2021-08-01 18:14:54,096 - utilities.APIBase -INFO - Execution of Test Case:- getLastUpdatedBooking finished
+
+2021-08-01 18:14:54,096 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:54,097 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:54,098 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedBooking started
+2021-08-01 18:14:54,126 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/13
+2021-08-01 18:14:55,415 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=application/json; charset=utf-8
+Content-Length=169
+Etag=W/"a9-fKcoLkli56KgR+HdU3op18JCsJw"
+Date=Sun, 01 Aug 2021 10:14:55 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:55,415 - utilities.APIBase -INFO - Request is Here 
+Request method:	PATCH
+Request URI:	https://restful-booker.herokuapp.com/booking/13
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 98fba921b288b42
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstname": "Yasmin",
+    "lastname": "McKenzie",
+    "totalprice": 0,
+    "depositpaid": false
+}
+
+2021-08-01 18:14:55,416 - utilities.APIBase -INFO - Response is Here 
+{"firstname":"Yasmin","lastname":"McKenzie","totalprice":0,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"++#&+"}
+2021-08-01 18:14:55,416 - utilities.APIBase -INFO - API Response Time is 1269
+2021-08-01 18:14:55,417 - testcases.TestCasesNewBooking -INFO - PATCH Response-->{"firstname":"Yasmin","lastname":"McKenzie","totalprice":0,"depositpaid":false,"bookingdates":{"checkin":"2021-12-01","checkout":"2022-12-01"},"additionalneeds":"++#&+"}
+2021-08-01 18:14:55,428 - utilities.APIBase -INFO - Execution of Test Case:- patchLastUpdatedBooking finished
+
+2021-08-01 18:14:55,429 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:55,430 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:55,430 - utilities.APIBase -INFO - Execution of Test Case:- deleteLastCreatedBooking started
+2021-08-01 18:14:55,432 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/13
+2021-08-01 18:14:56,585 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=7
+Etag=W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
+Date=Sun, 01 Aug 2021 10:14:56 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:56,585 - utilities.APIBase -INFO - Request is Here 
+Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/13
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie= token= 98fba921b288b42
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:14:56,586 - utilities.APIBase -INFO - Response is Here 
+Created
+2021-08-01 18:14:56,586 - utilities.APIBase -INFO - API Response Time is 1144
+2021-08-01 18:14:56,588 - utilities.APIBase -INFO - Execution of Test Case:- deleteLastCreatedBooking finished
+
+2021-08-01 18:14:56,588 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:56,589 - utilities.APIBase -INFO - ================================================================================== 
+
+2021-08-01 18:14:56,590 - utilities.APIBase -INFO - Execution of Test Case:- getLastDeletedBooking started
+2021-08-01 18:14:56,591 - utilities.APIBase -INFO - URL-->https://restful-booker.herokuapp.com/booking/13
+2021-08-01 18:14:57,867 - utilities.APIBase -INFO - Headers are here 
+Server=Cowboy
+Connection=keep-alive
+X-Powered-By=Express
+Content-Type=text/plain; charset=utf-8
+Content-Length=9
+Etag=W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"
+Date=Sun, 01 Aug 2021 10:14:57 GMT
+Via=1.1 vegur
+
+
+2021-08-01 18:14:57,867 - utilities.APIBase -INFO - Request is Here 
+Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/13
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+
+2021-08-01 18:14:57,868 - utilities.APIBase -INFO - Response is Here 
+Not Found
+2021-08-01 18:14:57,869 - utilities.APIBase -INFO - API Response Time is 1268
+2021-08-01 18:14:57,869 - utilities.APIBase -INFO - Execution of Test Case:- getLastDeletedBooking finished
+
+2021-08-01 18:14:57,870 - utilities.APIBase -INFO - ================================================================================== 
+
