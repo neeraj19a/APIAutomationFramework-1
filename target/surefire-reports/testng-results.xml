@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="18" passed="18">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="28031" started-at="2021-08-01T08:57:27Z" finished-at="2021-08-01T08:57:55Z">
+    <groups>
+    </groups>
+    <test name="Regression of Existing Bookings" duration-ms="16775" started-at="2021-08-01T08:57:27Z" finished-at="2021-08-01T08:57:43Z">
+      <class name="testcases.TestCasesExistingBooking">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="beforeClass" is-config="true" duration-ms="4" started-at="2021-08-01T08:57:27Z" finished-at="2021-08-01T08:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="beforeMethod" is-config="true" duration-ms="22" started-at="2021-08-01T08:57:27Z" finished-at="2021-08-01T08:57:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesExistingBooking.getListOfBooking() throws com.fasterxml.jackson.core.JsonProcessingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getListOfBooking()[pri:1, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="getListOfBooking" duration-ms="3999" started-at="2021-08-01T08:57:27Z" finished-at="2021-08-01T08:57:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getListOfBooking -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="afterMethod" is-config="true" duration-ms="11" started-at="2021-08-01T08:57:31Z" finished-at="2021-08-01T08:57:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getListOfBooking status=SUCCESS method=TestCasesExistingBooking.getListOfBooking()[pri:1, instance:testcases.TestCasesExistingBooking@32ee6fee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:31Z" finished-at="2021-08-01T08:57:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesExistingBooking.getExistingBookingById() throws com.fasterxml.jackson.core.JsonProcessingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getExistingBookingById()[pri:2, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="getExistingBookingById" duration-ms="1301" started-at="2021-08-01T08:57:31Z" finished-at="2021-08-01T08:57:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getExistingBookingById -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T08:57:32Z" finished-at="2021-08-01T08:57:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getExistingBookingById status=SUCCESS method=TestCasesExistingBooking.getExistingBookingById()[pri:2, instance:testcases.TestCasesExistingBooking@32ee6fee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:32Z" finished-at="2021-08-01T08:57:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesExistingBooking.updateExistingBookingWithoutToken()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="updateExistingBookingWithoutToken()[pri:3, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="updateExistingBookingWithoutToken" duration-ms="1779" started-at="2021-08-01T08:57:32Z" finished-at="2021-08-01T08:57:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateExistingBookingWithoutToken -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T08:57:34Z" finished-at="2021-08-01T08:57:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateExistingBookingWithoutToken status=SUCCESS method=TestCasesExistingBooking.updateExistingBookingWithoutToken()[pri:3, instance:testcases.TestCasesExistingBooking@32ee6fee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:34Z" finished-at="2021-08-01T08:57:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesExistingBooking.patchExistingBookingWithoutToken()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="patchExistingBookingWithoutToken()[pri:4, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="patchExistingBookingWithoutToken" duration-ms="1529" started-at="2021-08-01T08:57:34Z" finished-at="2021-08-01T08:57:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchExistingBookingWithoutToken -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="afterMethod" is-config="true" duration-ms="4" started-at="2021-08-01T08:57:35Z" finished-at="2021-08-01T08:57:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=patchExistingBookingWithoutToken status=SUCCESS method=TestCasesExistingBooking.patchExistingBookingWithoutToken()[pri:4, instance:testcases.TestCasesExistingBooking@32ee6fee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="beforeMethod" is-config="true" duration-ms="3" started-at="2021-08-01T08:57:35Z" finished-at="2021-08-01T08:57:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesExistingBooking.generateToken()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="generateToken()[pri:5, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="generateToken" duration-ms="3009" started-at="2021-08-01T08:57:35Z" finished-at="2021-08-01T08:57:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateToken -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:38Z" finished-at="2021-08-01T08:57:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=generateToken status=SUCCESS method=TestCasesExistingBooking.generateToken()[pri:5, instance:testcases.TestCasesExistingBooking@32ee6fee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:38Z" finished-at="2021-08-01T08:57:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesExistingBooking.updateExistingBooking()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="updateExistingBooking()[pri:6, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="updateExistingBooking" duration-ms="1313" started-at="2021-08-01T08:57:38Z" finished-at="2021-08-01T08:57:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateExistingBooking -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:40Z" finished-at="2021-08-01T08:57:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateExistingBooking status=SUCCESS method=TestCasesExistingBooking.updateExistingBooking()[pri:6, instance:testcases.TestCasesExistingBooking@32ee6fee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:40Z" finished-at="2021-08-01T08:57:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesExistingBooking.getLastUpdatedExistingBooking() throws com.fasterxml.jackson.core.JsonProcessingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getLastUpdatedExistingBooking()[pri:7, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="getLastUpdatedExistingBooking" duration-ms="1286" started-at="2021-08-01T08:57:40Z" finished-at="2021-08-01T08:57:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLastUpdatedExistingBooking -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T08:57:41Z" finished-at="2021-08-01T08:57:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getLastUpdatedExistingBooking status=SUCCESS method=TestCasesExistingBooking.getLastUpdatedExistingBooking()[pri:7, instance:testcases.TestCasesExistingBooking@32ee6fee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:41Z" finished-at="2021-08-01T08:57:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesExistingBooking.patchLastUpdatedExistingBooking() throws com.fasterxml.jackson.core.JsonProcessingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="patchLastUpdatedExistingBooking()[pri:8, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="patchLastUpdatedExistingBooking" duration-ms="1274" started-at="2021-08-01T08:57:41Z" finished-at="2021-08-01T08:57:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchLastUpdatedExistingBooking -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T08:57:42Z" finished-at="2021-08-01T08:57:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=patchLastUpdatedExistingBooking status=SUCCESS method=TestCasesExistingBooking.patchLastUpdatedExistingBooking()[pri:8, instance:testcases.TestCasesExistingBooking@32ee6fee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:42Z" finished-at="2021-08-01T08:57:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesExistingBooking.deleteExistingBooking()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="deleteExistingBooking()[pri:9, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="deleteExistingBooking" duration-ms="1185" started-at="2021-08-01T08:57:42Z" finished-at="2021-08-01T08:57:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteExistingBooking -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesExistingBooking@32ee6fee]" name="afterMethod" is-config="true" duration-ms="5" started-at="2021-08-01T08:57:43Z" finished-at="2021-08-01T08:57:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteExistingBooking status=SUCCESS method=TestCasesExistingBooking.deleteExistingBooking()[pri:9, instance:testcases.TestCasesExistingBooking@32ee6fee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testcases.TestCasesExistingBooking -->
+    </test> <!-- Regression of Existing Bookings -->
+    <test name="Regression of New  Bookings" duration-ms="11233" started-at="2021-08-01T08:57:43Z" finished-at="2021-08-01T08:57:55Z">
+      <class name="testcases.TestCasesNewBooking">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="setUp" is-config="true" duration-ms="246" started-at="2021-08-01T08:57:26Z" finished-at="2021-08-01T08:57:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="beforeClass" is-config="true" duration-ms="0" started-at="2021-08-01T08:57:43Z" finished-at="2021-08-01T08:57:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-01T08:57:43Z" finished-at="2021-08-01T08:57:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesNewBooking.getListOfBooking() throws com.fasterxml.jackson.core.JsonProcessingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getListOfBooking()[pri:1, instance:testcases.TestCasesNewBooking@618425b5]" name="getListOfBooking" duration-ms="1198" started-at="2021-08-01T08:57:43Z" finished-at="2021-08-01T08:57:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getListOfBooking -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T08:57:45Z" finished-at="2021-08-01T08:57:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getListOfBooking status=SUCCESS method=TestCasesNewBooking.getListOfBooking()[pri:1, instance:testcases.TestCasesNewBooking@618425b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:45Z" finished-at="2021-08-01T08:57:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesNewBooking.createBooking()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="createBooking()[pri:2, instance:testcases.TestCasesNewBooking@618425b5]" name="createBooking" duration-ms="1273" started-at="2021-08-01T08:57:45Z" finished-at="2021-08-01T08:57:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBooking -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:46Z" finished-at="2021-08-01T08:57:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createBooking status=SUCCESS method=TestCasesNewBooking.createBooking()[pri:2, instance:testcases.TestCasesNewBooking@618425b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:46Z" finished-at="2021-08-01T08:57:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesNewBooking.getLastCreatedBookingById() throws com.fasterxml.jackson.core.JsonProcessingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getLastCreatedBookingById()[pri:3, instance:testcases.TestCasesNewBooking@618425b5]" name="getLastCreatedBookingById" duration-ms="1212" started-at="2021-08-01T08:57:46Z" finished-at="2021-08-01T08:57:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLastCreatedBookingById -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:47Z" finished-at="2021-08-01T08:57:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getLastCreatedBookingById status=SUCCESS method=TestCasesNewBooking.getLastCreatedBookingById()[pri:3, instance:testcases.TestCasesNewBooking@618425b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:47Z" finished-at="2021-08-01T08:57:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesNewBooking.generateToken()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="generateToken()[pri:4, instance:testcases.TestCasesNewBooking@618425b5]" name="generateToken" duration-ms="1261" started-at="2021-08-01T08:57:47Z" finished-at="2021-08-01T08:57:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateToken -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:48Z" finished-at="2021-08-01T08:57:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=generateToken status=SUCCESS method=TestCasesNewBooking.generateToken()[pri:4, instance:testcases.TestCasesNewBooking@618425b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:48Z" finished-at="2021-08-01T08:57:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesNewBooking.updateLastCreatedBooking()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="updateLastCreatedBooking()[pri:5, instance:testcases.TestCasesNewBooking@618425b5]" name="updateLastCreatedBooking" duration-ms="1250" started-at="2021-08-01T08:57:48Z" finished-at="2021-08-01T08:57:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLastCreatedBooking -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:50Z" finished-at="2021-08-01T08:57:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateLastCreatedBooking status=SUCCESS method=TestCasesNewBooking.updateLastCreatedBooking()[pri:5, instance:testcases.TestCasesNewBooking@618425b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:50Z" finished-at="2021-08-01T08:57:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesNewBooking.getLastUpdatedBooking() throws com.fasterxml.jackson.core.JsonProcessingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getLastUpdatedBooking()[pri:6, instance:testcases.TestCasesNewBooking@618425b5]" name="getLastUpdatedBooking" duration-ms="1277" started-at="2021-08-01T08:57:50Z" finished-at="2021-08-01T08:57:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLastUpdatedBooking -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:51Z" finished-at="2021-08-01T08:57:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getLastUpdatedBooking status=SUCCESS method=TestCasesNewBooking.getLastUpdatedBooking()[pri:6, instance:testcases.TestCasesNewBooking@618425b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:51Z" finished-at="2021-08-01T08:57:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesNewBooking.patchLastUpdatedBooking() throws com.fasterxml.jackson.core.JsonProcessingException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="patchLastUpdatedBooking()[pri:7, instance:testcases.TestCasesNewBooking@618425b5]" name="patchLastUpdatedBooking" duration-ms="1393" started-at="2021-08-01T08:57:51Z" finished-at="2021-08-01T08:57:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchLastUpdatedBooking -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:52Z" finished-at="2021-08-01T08:57:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=patchLastUpdatedBooking status=SUCCESS method=TestCasesNewBooking.patchLastUpdatedBooking()[pri:7, instance:testcases.TestCasesNewBooking@618425b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="deleteLastCreatedBooking()[pri:8, instance:testcases.TestCasesNewBooking@618425b5]" name="deleteLastCreatedBooking" duration-ms="1181" started-at="2021-08-01T08:57:52Z" finished-at="2021-08-01T08:57:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLastCreatedBooking -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2021-08-01T08:57:52Z" finished-at="2021-08-01T08:57:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesNewBooking.deleteLastCreatedBooking()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-08-01T08:57:54Z" finished-at="2021-08-01T08:57:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteLastCreatedBooking status=SUCCESS method=TestCasesNewBooking.deleteLastCreatedBooking()[pri:8, instance:testcases.TestCasesNewBooking@618425b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2021-08-01T08:57:54Z" finished-at="2021-08-01T08:57:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.TestCasesNewBooking.getLastDeletedBooking()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="getLastDeletedBooking()[pri:9, instance:testcases.TestCasesNewBooking@618425b5]" name="getLastDeletedBooking" duration-ms="1160" started-at="2021-08-01T08:57:54Z" finished-at="2021-08-01T08:57:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLastDeletedBooking -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-08-01T08:57:55Z" finished-at="2021-08-01T08:57:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=getLastDeletedBooking status=SUCCESS method=TestCasesNewBooking.getLastDeletedBooking()[pri:9, instance:testcases.TestCasesNewBooking@618425b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="tearDownFramework()[pri:0, instance:testcases.TestCasesNewBooking@618425b5]" name="tearDownFramework" is-config="true" duration-ms="386" started-at="2021-08-01T08:57:55Z" finished-at="2021-08-01T08:57:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownFramework -->
+      </class> <!-- testcases.TestCasesNewBooking -->
+    </test> <!-- Regression of New  Bookings -->
+  </suite> <!-- Suite -->
+</testng-results>
