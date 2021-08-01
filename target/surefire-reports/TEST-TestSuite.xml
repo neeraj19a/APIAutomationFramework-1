@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="31.252" tests="18" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="33.735" tests="18" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
@@ -62,22 +62,22 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="getListOfBooking" classname="testcases.TestCasesExistingBooking" time="4.428"/>
-  <testcase name="getExistingBookingById" classname="testcases.TestCasesExistingBooking" time="1.554"/>
-  <testcase name="updateExistingBookingWithoutToken" classname="testcases.TestCasesExistingBooking" time="1.882"/>
-  <testcase name="patchExistingBookingWithoutToken" classname="testcases.TestCasesExistingBooking" time="1.427"/>
-  <testcase name="generateToken" classname="testcases.TestCasesExistingBooking" time="2.013"/>
-  <testcase name="updateExistingBooking" classname="testcases.TestCasesExistingBooking" time="1.261"/>
-  <testcase name="getLastUpdatedExistingBooking" classname="testcases.TestCasesExistingBooking" time="1.215"/>
-  <testcase name="patchLastUpdatedExistingBooking" classname="testcases.TestCasesExistingBooking" time="1.321"/>
-  <testcase name="deleteExistingBooking" classname="testcases.TestCasesExistingBooking" time="1.309"/>
-  <testcase name="getListOfBooking" classname="testcases.TestCasesNewBooking" time="1.305"/>
-  <testcase name="createBooking" classname="testcases.TestCasesNewBooking" time="1.28"/>
-  <testcase name="getLastCreatedBookingById" classname="testcases.TestCasesNewBooking" time="1.231"/>
-  <testcase name="generateToken" classname="testcases.TestCasesNewBooking" time="1.29"/>
-  <testcase name="updateLastCreatedBooking" classname="testcases.TestCasesNewBooking" time="1.341"/>
-  <testcase name="getLastUpdatedBooking" classname="testcases.TestCasesNewBooking" time="1.135"/>
-  <testcase name="patchLastUpdatedBooking" classname="testcases.TestCasesNewBooking" time="1.322"/>
-  <testcase name="deleteLastCreatedBooking" classname="testcases.TestCasesNewBooking" time="1.158"/>
-  <testcase name="getLastDeletedBooking" classname="testcases.TestCasesNewBooking" time="1.279"/>
+  <testcase name="getListOfBooking" classname="testcases.TestCasesExistingBooking" time="5.392"/>
+  <testcase name="getExistingBookingById" classname="testcases.TestCasesExistingBooking" time="1.264"/>
+  <testcase name="updateExistingBookingWithoutToken" classname="testcases.TestCasesExistingBooking" time="2.014"/>
+  <testcase name="patchExistingBookingWithoutToken" classname="testcases.TestCasesExistingBooking" time="1.327"/>
+  <testcase name="generateToken" classname="testcases.TestCasesExistingBooking" time="2.15"/>
+  <testcase name="updateExistingBooking" classname="testcases.TestCasesExistingBooking" time="1.556"/>
+  <testcase name="getLastUpdatedExistingBooking" classname="testcases.TestCasesExistingBooking" time="1.233"/>
+  <testcase name="patchLastUpdatedExistingBooking" classname="testcases.TestCasesExistingBooking" time="1.376"/>
+  <testcase name="deleteExistingBooking" classname="testcases.TestCasesExistingBooking" time="1.236"/>
+  <testcase name="getListOfBooking" classname="testcases.TestCasesNewBooking" time="1.25"/>
+  <testcase name="createBooking" classname="testcases.TestCasesNewBooking" time="1.367"/>
+  <testcase name="getLastCreatedBookingById" classname="testcases.TestCasesNewBooking" time="1.32"/>
+  <testcase name="generateToken" classname="testcases.TestCasesNewBooking" time="1.187"/>
+  <testcase name="updateLastCreatedBooking" classname="testcases.TestCasesNewBooking" time="1.22"/>
+  <testcase name="getLastUpdatedBooking" classname="testcases.TestCasesNewBooking" time="1.327"/>
+  <testcase name="patchLastUpdatedBooking" classname="testcases.TestCasesNewBooking" time="1.346"/>
+  <testcase name="deleteLastCreatedBooking" classname="testcases.TestCasesNewBooking" time="1.289"/>
+  <testcase name="getLastDeletedBooking" classname="testcases.TestCasesNewBooking" time="1.333"/>
 </testsuite>

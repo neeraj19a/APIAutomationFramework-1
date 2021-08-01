@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4919628f-b218-4e8c-9bda-77e12e9f892f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/log/application.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/testlog.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/testlog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/application.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/testlog.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/testReport/TestReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/testReport/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/testReport/TestReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/Regression of Existing Bookings.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Suite/Regression of Existing Bookings.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/Regression of Existing Bookings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Suite/Regression of Existing Bookings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite/Regression of New  Bookings.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Suite/Regression of New  Bookings.html" afterDir="false" />
@@ -25,7 +25,6 @@
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Suite/methods.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pojo/Bookingdetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pojo/Bookingdetails.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -281,10 +280,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="454" y="90" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.738@0.0.1366.738" timestamp="1627729751345" />
-    <state x="390" y="125" width="586" height="488" key="find.popup" timestamp="1627812537531">
+    <state x="390" y="125" width="586" height="488" key="find.popup" timestamp="1627814633760">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="390" y="125" width="586" height="488" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1627812537531" />
+    <state x="390" y="125" width="586" height="488" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1627814633760" />
     <state x="339" y="165" key="run.anything.popup" timestamp="1627713676992">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
